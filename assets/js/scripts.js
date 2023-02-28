@@ -25,7 +25,7 @@ document.getElementById("toc-placeholder").appendChild(ul);
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-	if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 		document.querySelector('.back-to-top').classList.add('show');
 		} 
 	else {
