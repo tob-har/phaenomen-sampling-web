@@ -499,7 +499,26 @@ label.margin-toggle:not(.sidenote-number) {
     margin-top: 2rem;
     margin-bottom: 1.4rem;
     line-height: 1;
+}
 
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 20px;
+    left: 12px;
+    z-index: 999999999;
+    width: 100%;
+    background-color: #fffff8;
+    color: #111;
+    opacity: 0.9;
+}
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    .sticky {
+        background-color: #151515;
+        color: #ddd;
+    }
 }
 
 details summary {
@@ -534,3 +553,4 @@ details summary {
 .back-to-top.show {
     display: block;
 }
+
