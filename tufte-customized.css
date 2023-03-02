@@ -527,9 +527,6 @@ label.margin-toggle:not(.sidenote-number) {
     }
 }
 
-summary {
-    list-style-type: none;
-}
 
 details summary {
     list-style-type: none;

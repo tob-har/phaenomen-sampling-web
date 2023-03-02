@@ -31,29 +31,6 @@ function toggleHeight() {
 
 
 
-// Get all anchor tags with a hash (#) in the href attribute
-const anchors = document.querySelectorAll('a[href^="#"]');
-
-// Loop through each anchor tag
-anchors.forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    // Prevent the default behavior of the anchor tag
-    e.preventDefault();
-    // Get the target element of the anchor tag
-    const target = document.querySelector(this.getAttribute('href'));
-    // Get the top position of the target element
-    const targetTop = target.getBoundingClientRect().top + window.pageYOffset;
-    // Scroll to the target element with an offset of 80 pixels
-    window.scrollTo({
-      top: targetTop - 80,
-      behavior: 'smooth'
-    });
-  });
-});
-
-
-
-
 // CLOSE THE TOC AFTER CLICKING A LINK AND MAKE IT SMALL AGAIN
 
 const tocLinks = document.querySelectorAll('#the-table-of-content ul li a');
@@ -85,6 +62,30 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+
+// SCROLL OFFSET TO ALL SCROLLINGS TO AN A ELEMENT
+
+// Get all anchor tags with a hash (#) in the href attribute
+const anchors = document.querySelectorAll('a[href^="#"]');
+
+// Loop through each anchor tag
+anchors.forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    // Prevent the default behavior of the anchor tag
+    e.preventDefault();
+    // Get the target element of the anchor tag
+    const target = document.querySelector(this.getAttribute('href'));
+    // Get the top position of the target element
+    const targetTop = target.getBoundingClientRect().top + window.pageYOffset;
+    // Scroll to the target element with an offset of 80 pixels
+    window.scrollTo({
+      top: targetTop - 80,
+      behavior: 'smooth'
+    });
+  });
+});
+
 
 
 
