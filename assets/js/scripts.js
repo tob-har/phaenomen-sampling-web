@@ -18,6 +18,8 @@ for (var i = 0; i < headings.length; i++) {
 document.getElementById("toc-placeholder").appendChild(ul);
 
 
+// MAKE TOC LARGE AFTER CLICKING HEADING
+
 function toggleHeight() {
     const content = document.getElementById('toc-container');
     if (content.style.height === '500px') {
@@ -29,9 +31,7 @@ function toggleHeight() {
 
 
 
-
-
-// CLOSE THE TOC AFTER CLICKNG A LINK
+// CLOSE THE TOC AFTER CLICKING A LINK AND MAKE IT SMALL AGAIN
 
 const tocLinks = document.querySelectorAll('#the-table-of-content ul li a');
 tocLinks.forEach(link => {
@@ -61,8 +61,6 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
-
 
 
 
