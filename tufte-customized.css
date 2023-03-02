@@ -51,7 +51,7 @@ body {
     margin-right: auto;
     padding-left: 12.5%;
     font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-    background-color: #fffff8;
+    background-color: #f2f2f2; /*#fffff8;*/
     color: #111;
     max-width: 1400px;
     counter-reset: sidenote-counter;
@@ -134,7 +134,7 @@ ol,
 ul {
     font-size: 1.4rem;
     line-height: 2rem;
-    list-style-type: none;
+    /*list-style-type: none;*/
 }
 
 p {
@@ -514,7 +514,7 @@ label.margin-toggle:not(.sidenote-number) {
     left: 12px;
     z-index: 99999999;
     width: 100%;
-    background-color: #fffff8;
+    background-color: #f2f2f2;
     color: #111;
     opacity: 0.95;
 }

@@ -22,10 +22,10 @@ document.getElementById("toc-placeholder").appendChild(ul);
 
 function toggleHeight() {
     const contentTocContainer = document.getElementById('toc-container');
-    if (contentTocContainer.style.height === '500px') {
+    if (contentTocContainer.style.height === '400px') {
         contentTocContainer.style.height = '40px';
     } else {
-        contentTocContainer.style.height = '500px';
+        contentTocContainer.style.height = '400px';
     }
 }
 
@@ -41,7 +41,7 @@ tocLinks.forEach(link => {
         
         const contentTocContainer = document.getElementById('toc-container');
    		if (contentTocContainer.style.height === '40px') {
-        contentTocContainer.style.height = '500px';
+        contentTocContainer.style.height = '400px';
     	} else {
         contentTocContainer.style.height = '40px';
     }
@@ -107,5 +107,4 @@ document.querySelector('.back-to-top').addEventListener('click', function(e) {
 	document.body.scrollTop = 0;
 	document.documentElement.scrollTop = 0;
 	});
-
 
