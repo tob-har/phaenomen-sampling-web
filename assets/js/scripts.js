@@ -1,7 +1,6 @@
 
 // TABLE OF CONTENTS
 
-
 var toc = document.getElementById("whole-document");
 var headings = toc.querySelectorAll("h2, h3, h4, h5, h6");
 var ul = document.createElement("ul");
@@ -19,17 +18,24 @@ for (var i = 0; i < headings.length; i++) {
 document.getElementById("toc-placeholder").appendChild(ul);
 
 
+// CLOSE THE TOC AFTER CLICKNG A LINK
 
-// When the user scrolls the page, execute myFunction
+const tocLinks = document.querySelectorAll('#the-table-of-content ul li a');
+
+tocLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        const detailsElement = document.getElementById('the-table-of-content');
+        detailsElement.removeAttribute('open');
+    });
+});
+
+
+// MAKE TOC STICKY ON TOP // SEE CSS CLASS .STICKY
+
 window.onscroll = function() {myFunction()};
-
-// Get the navbar
 var navbar = document.getElementById("the-table-of-content");
-
-// Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")

@@ -506,6 +506,7 @@ label.margin-toggle:not(.sidenote-number) {
     position: fixed;
     top: 0px;
     padding-top: 12px;
+    padding-bottom: 12px;
     left: 12px;
     z-index: 999999999;
     width: 100%;
