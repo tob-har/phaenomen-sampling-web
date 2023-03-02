@@ -18,10 +18,22 @@ for (var i = 0; i < headings.length; i++) {
 document.getElementById("toc-placeholder").appendChild(ul);
 
 
+function toggleHeight() {
+    const content = document.getElementById('toc-container');
+    if (content.style.height === '500px') {
+        content.style.height = '40px';
+    } else {
+        content.style.height = '500px';
+    }
+}
+
+
+
+
+
 // CLOSE THE TOC AFTER CLICKNG A LINK
 
 const tocLinks = document.querySelectorAll('#the-table-of-content ul li a');
-
 tocLinks.forEach(link => {
     link.addEventListener('click', () => {
         const detailsElement = document.getElementById('the-table-of-content');
