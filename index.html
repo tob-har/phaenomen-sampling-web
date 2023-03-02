@@ -41,11 +41,10 @@
         <hr>
          
 
-    
         <!-- The TOC will be places here!--> 
         <div id="toc-container" class="sticky">
         <details id="the-table-of-content">
-            <summary onclick="toggleHeight()"><span class="toc-heading">INHALT</span></summary>
+            <summary id="toc-heading-text" onclick="toggleHeight()"><span class="toc-heading">INHALT</span></summary>
                 <div id="toc-placeholder"></div>
                 <br>
         </details>
@@ -63,7 +62,7 @@
 
         <h2 id="infos-zu-diesem-text">About</h2>
         <section>
-            <p>Diese Online-Publikaton ist eine Kollektion von Auszügen aus meiner Dissertation <em>Das Phänomen Sampling</em> (eingericht am 24. Juli 2020 an der Hochschule für Musik und Tanz Köln und verteidigt am 5. Februar 2021). Sie ist weitestgehend modular strukturiert. Die einzelnen Abschnitte stehen zwar in einem Gesamtzusammenhang, können jedoch als in sich abgeschlossene Einheiten gelesen werden.</p>
+            <p>Diese Online-Publikation ist eine Kollektion von Auszügen aus meiner Dissertation <em>Das Phänomen Sampling</em> (eingericht am 24. Juli 2020 an der Hochschule für Musik und Tanz Köln und verteidigt am 5. Februar 2021). Sie ist weitestgehend modular strukturiert. Die einzelnen Abschnitte stehen zwar in einem Gesamtzusammenhang, können jedoch als in sich abgeschlossene Einheiten gelesen werden.</p>
 
             <p>Alle wörtlichen Zitate werden in Orthografie und Formatierung wie im Original übernommen und nicht übersetzt. Auslassungen, Ergänzungen und grammatikalische Veränderungen werden durch eckige Klammern kenntlich gemacht. Hervorhebungen oder sonstige Besonderheiten sind stets aus dem Original übernommen.</p>
 
@@ -75,7 +74,7 @@
 
             <p>Alle Weblinks wurden jewels bei der Einbettung zuletzt geprüft. Daher erfolgt keine Nennung eines Abrufdatums im Einzelfall.</p>
 
-            <p><a href="https://hildok.bsz-bw.de/files/1343/MMD_05_Hartmann.pdf" target="_blank"><p>Die PDF-Publikation <em>Das Phänomen Sampling - Eine multiperspektivische Annäherung</em> kann unter diesem Linke heruntergeladen werden.</a></p>
+            <p><a href="https://hildok.bsz-bw.de/files/1343/MMD_05_Hartmann.pdf" target="_blank"><p>Die PDF-Publikation <em>Das Phänomen Sampling - Eine multiperspektivische Annäherung</em> kann unter diesem Link heruntergeladen werden.</a></p>
         </section>
         <hr>
 
@@ -86,7 +85,7 @@
                 <p>If a function <math><mi>f</mi><mo>(</mo><mi>t</mi><mo>)</mo></math> contains no frequencies higher than <math><msub><mi>W</mi><mrow><mi>c</mi><mi>p</mi><mi>s</mi></mrow></msub></math> [cycles per second], it is completely determined by giving its ordinates at a series of points spaced <math><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>W</mi></math> seconds apart.<label for="sn-90" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-90" class="margin-toggle"/><span class="sidenote">Shannon 1998: 448.</span></p>        
             </blockquote>
             
-            <p>Die maximal erfassbare Frequenz fmax ist dabei halb so groß wie die Frequenz des Zeitintervalls <math><msub><mi>f</mi><mi>t</mi></msub></math> , innerhalb dessen die Einzelwerte aus der ursprünglichen Funktion erfasst werden: <math><msub><mi>f</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><msub><mi>f</mi><mi>T</mi></msub><mo>/</mo><mn>2</mn></math>.<label for="sn-91" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-91" class="margin-toggle"/><span class="sidenote">Vgl. Unser 2000: 569.</span> Auch erbringt Claude Shannon den mathematischen Beweis seines Theorems, indem er die Summenfunktion liefert, durch welche f (t) vollständig definiert ist:<label for="sn-92" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-92" class="margin-toggle"/><span class="sidenote">Shannon 1948: 54; 1998: 448.</span></p>
+            <p>Die maximal erfassbare Frequenz fmax ist dabei halb so groß wie die Frequenz des Zeitintervalls <math><msub><mi>f</mi><mi>t</mi></msub></math> , innerhalb dessen die Einzelwerte aus der ursprünglichen Funktion erfasst werden: <math><msub><mi>f</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><msub><mi>f</mi><mi>T</mi></msub><mo>/</mo><mn>2</mn></math>.<label for="sn-91" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-91" class="margin-toggle"/><span class="sidenote">Vgl. Unser 2000: 569.</span> Auch erbringt Claude Shannon den mathematischen Beweis seines Theorems, indem er die Summenfunktion liefert, durch welche <math><msub><mi>f</mi><mi>t</mi></msub></math> vollständig definiert ist:<label for="sn-92" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-92" class="margin-toggle"/><span class="sidenote">Shannon 1948: 54; 1998: 448.</span></p>
             <p>
                 <math><mi>f</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></munderover><msub><mi>x</mi><mi>n</mi></msub><mfrac><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mi>π</mi><mo>(</mo><mn>2</mn><mi>W</mi><mi>t</mi><mo>-</mo><mi>n</mi><mo>)</mo></mrow><mrow><mi>π</mi><mo>(</mo><mn>2</mn><mi>W</mi><mi>t</mi><mo>-</mo><mi>n</mi><mo>)</mo></mrow></mfrac></math></p>
         

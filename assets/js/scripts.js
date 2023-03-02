@@ -21,13 +21,36 @@ document.getElementById("toc-placeholder").appendChild(ul);
 // MAKE TOC LARGE AFTER CLICKING HEADING
 
 function toggleHeight() {
-    const content = document.getElementById('toc-container');
-    if (content.style.height === '500px') {
-        content.style.height = '40px';
+    const contentTocContainer = document.getElementById('toc-container');
+    if (contentTocContainer.style.height === '500px') {
+        contentTocContainer.style.height = '40px';
     } else {
-        content.style.height = '500px';
+        contentTocContainer.style.height = '500px';
     }
 }
+
+
+
+// Get all anchor tags with a hash (#) in the href attribute
+const anchors = document.querySelectorAll('a[href^="#"]');
+
+// Loop through each anchor tag
+anchors.forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    // Prevent the default behavior of the anchor tag
+    e.preventDefault();
+    // Get the target element of the anchor tag
+    const target = document.querySelector(this.getAttribute('href'));
+    // Get the top position of the target element
+    const targetTop = target.getBoundingClientRect().top + window.pageYOffset;
+    // Scroll to the target element with an offset of 80 pixels
+    window.scrollTo({
+      top: targetTop - 80,
+      behavior: 'smooth'
+    });
+  });
+});
+
 
 
 
@@ -38,11 +61,12 @@ tocLinks.forEach(link => {
     link.addEventListener('click', () => {
         const detailsElement = document.getElementById('the-table-of-content');
         detailsElement.removeAttribute('open');
-        const content = document.getElementById('toc-container');
-   		 if (content.style.height === '40px') {
-        content.style.height = '500px';
+        
+        const contentTocContainer = document.getElementById('toc-container');
+   		if (contentTocContainer.style.height === '40px') {
+        contentTocContainer.style.height = '500px';
     	} else {
-        content.style.height = '40px';
+        contentTocContainer.style.height = '40px';
     }
     });
 });
