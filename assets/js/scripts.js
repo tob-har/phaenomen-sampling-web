@@ -38,6 +38,12 @@ tocLinks.forEach(link => {
     link.addEventListener('click', () => {
         const detailsElement = document.getElementById('the-table-of-content');
         detailsElement.removeAttribute('open');
+        const content = document.getElementById('toc-container');
+   		 if (content.style.height === '40px') {
+        content.style.height = '500px';
+    	} else {
+        content.style.height = '40px';
+    }
     });
 });
 
