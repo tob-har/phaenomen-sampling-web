@@ -488,6 +488,8 @@ label.margin-toggle:not(.sidenote-number) {
     }
 }
 
+
+
 /* CUSTOM STYLING */
 
 .toc-heading {
@@ -505,6 +507,12 @@ details summary {
     cursor: pointer;
 }
 
+.math {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 0;
+    vertical-align: baseline;
+}
 
 /* BACK TO TOP BUTTON */
 .back-to-top {
@@ -520,8 +528,9 @@ details summary {
     border-radius: 5px;
 }
 
-/* .back-to-top:hover {} */
+.back-to-top:hover {
+}
 
 .back-to-top.show {
-  display: block;
+    display: block;
 }
