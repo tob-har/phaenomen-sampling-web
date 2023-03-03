@@ -3,7 +3,7 @@
 
 var toc = document.getElementById("whole-document");
 var headings = toc.querySelectorAll("h2, h3, h4, h5, h6");
-var ul = document.createElement("ol");
+var ol = document.createElement("ol");
 
 for (var i = 0; i < headings.length; i++) {
 	var text = headings[i].textContent;
@@ -12,10 +12,10 @@ for (var i = 0; i < headings.length; i++) {
 	a.textContent = text;
 	a.href = "#" + headings[i].id;
 	li.appendChild(a);
-	ul.appendChild(li);
+	ol.appendChild(li);
 	}
 
-document.getElementById("toc-placeholder").appendChild(ul);
+document.getElementById("toc-placeholder").appendChild(ol);
 
 
 // MAKE TOC LARGE AFTER CLICKING HEADING
