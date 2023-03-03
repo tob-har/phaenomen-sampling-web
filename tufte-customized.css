@@ -531,6 +531,7 @@ label.margin-toggle:not(.sidenote-number) {
 details summary {
     list-style-type: none;
     cursor: pointer;
+    width: 55%;
 }
 
 .math {

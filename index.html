@@ -50,9 +50,8 @@
         </details>
         </div>
  
-
-        <h2 id="Abstract">Abstract</h2>
         <section>
+        <h2 id="Abstract">Abstract</h2>
             <p>Die Begriffe Sampling und Sample verweisen in musik- und klangbezogenen Kontexten auf überaus Unterschiedliches. Der vorliegende Text beleuchtet die Entwicklung der Diskurse um diese Begriffe, analysiert instrumentale Sampling-Prozesse und reflektiert die Sampling-Praxis als künstlerischen
             Forschungsprozess. Dabei stehen folgende Fragen im Mittelpunkt:<br>
             Wie hat sich das Verständnis von Sampling und Samples gewandelt? Wie vermittelt sich Sampling durch die instrumentale Praxis? Inwiefern prägt die individuelle künstlerische Sampling-Praxis die Wahrnehmung von Sampling? Diese Fragen werden anhand von Beispielen und Diskursanalysen thematisiert. So zeigt etwa die Analyse konkreter Anwendungen, wie das Interface-Design von Instrumenten das Verständnis von Sampling beeinflusst. Auch ein eigenes Softwaretool des Autors wird in diesem Zusammenhang reflektiert.<br>
@@ -60,8 +59,10 @@
         </section>
         <hr>
 
-        <h2 id="infos-zu-diesem-text">About</h2>
+
+
         <section>
+        <h2 id="infos-zu-diesem-text">Infos</h2>
             <p>Diese Online-Publikation ist eine Kollektion von Auszügen aus meiner Dissertation <em>Das Phänomen Sampling</em> (eingericht am 24. Juli 2020 an der Hochschule für Musik und Tanz Köln und verteidigt am 5. Februar 2021). Sie ist weitestgehend modular strukturiert.</p>
 
             <p>Alle wörtlichen Zitate sind in Orthografie und Formatierung wie im Original übernommen und nicht übersetzt. Auslassungen, Ergänzungen und grammatikalische Veränderungen werden durch eckige Klammern kenntlich gemacht.</p>
@@ -78,8 +79,10 @@
         </section>
         <hr>
 
-        <h2 id="das-sampling-theorem">3.1 – Das Sampling-Theorem – »A striking Case of Multiple Discovery«</h2>
+
+
         <section>
+        <h2 id="das-sampling-theorem">3.1 – Das Sampling-Theorem – »A striking Case of Multiple Discovery«</h2>
             <p>Praktische Anwendungen der Signalwandlung von analog nach digital basieren auf einem mathematischen Beweis, wonach jede kontinuierliche Funktion mit exakt definierter Ober- und Untergrenze durch eine Serie von einzelnen numerischen Werten eindeutig beschrieben werden kann. In den Jahren 1948 und 1949 veröffentlichte der Mathematiker und Nachrichtentechniker Claude Elwood Shannon in den USA diesbezüglich seine Beweisführung einer allgemeinen Theorie der Übertragung und Transformation von Signalen in englischer Sprache. Es ist davon auszugehen, dass er seine Forschung daran ab dem Jahr 1940 begonnen hatte. Er folgte dabei thematisch nicht nur den technologischen Trends seiner Zeit (der Suche nach optimierten Wegen zur Nachrichtenübermittlung), sondern auch den Interessen des Militärs an neuen Methoden der Kryptografie.<label for="sn-89" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-89" class="margin-toggle"/><span class="sidenote">Vgl. Butzer et al. 2011: 15–16.</span> Sollen kontinuierliche analoge Signale der digitalen Übertragungstechnik zugeführt werden oder ist die vollständige Rekonstruktion eines ursprünglich analogen Signals aus dem Informationsgehalt eines digital codierten Signals angestrebt, führt bis heute kein Weg an der Gültigkeit des von ihm wie folgt formulierten Theorem vorbei:</p>
             <blockquote>
                 <p>If a function <math><mi>f</mi><mo>(</mo><mi>t</mi><mo>)</mo></math> contains no frequencies higher than <math><msub><mi>W</mi><mrow><mi>c</mi><mi>p</mi><mi>s</mi></mrow></msub></math> [cycles per second], it is completely determined by giving its ordinates at a series of points spaced <math><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>W</mi></math> seconds apart.<label for="sn-90" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-90" class="margin-toggle"/><span class="sidenote">Shannon 1998: 448.</span></p>        
@@ -124,8 +127,34 @@
         </section>
         <hr>
 
-        <h2 id="einzelne-samples-und-samplewerte">3.2 – Einzelne Samples und einzelne Sample-Werte</h2>
+
+
         <section>
+        <h2 id="einzelne-samples-und-samplewerte">3.2 – Einzelne Samples und einzelne Sample-Werte</h2>
+            <details id="zusammenfassung-einzelne-samples-und-samplewerte">
+                <summary><p><span class="newthought">Zusammenfassung</span></p> 
+                </summary>
+
+                <section>
+                    <ul style="list-style-type:none;">
+                        <li>
+                            <p>Das Erfassen einzelner momentaner Spannungswerte eines kontinuierlichen Signals wird von einer als sample and hold (S&H) bezeichneten Baugruppe realisiert. Sie erfasst innerhalb möglichst kleiner Zeitfenster die momentanen Amplitudenwerte der Spannung eines Eingangssignals und stellt diese der weiteren Signalverarbeitung zur Verfügung. Damit wird zum einen die digitale Übertragung ursprünglich kontinuierlicher analoger Signale mittels pulse code modulation (PCM) realisierbar. Zum anderen etablierte sich die S&H-Schaltung schon früh als Standard der analogen Klangsynthese. Sie dient in diesem Kontext in der Regel dazu, durch sequenzielles Abtasten eines Eingangssignals (weißes Rauschen) ein gestuftes Steuersignal zu generieren.</p>
+
+                            <p>Der Begriff Sampling bezeichnet dabei das Erfassen eines einzelnen Wertes zu einem bestimmten Zeitpunkt (oder genauer gesagt: eines Durchschnitts- oder Spitzenwertes innerhalb eines möglichst kleinen Zeitfensters) wie auch das sequenzielle (in der Regel automatisierte) Erfassen vieler solcher Werte innerhalb eines vorgegebenen zeitlichen Rasters.</p>
+
+                            <p>Als Sample ist in diesem Kontext das Ergebnis einer einzelnen Messung zu verstehen, welches in Abhängigkeit aller Bauteile einer Schaltung jede physikalisch mögliche Größe annehmen kann.</p>
+
+                            <p>Auch im Kontext der digitalen Signalverarbeitung bezeichnet der Begriff Sampling das Erfassen eines einzelnen Messwertes im Moment der Abtastung. Allerdings erfährt der Begriff Sample zur Bezeichnung eines einzelnen Werts hier eine Schärfung: Damit ein Messwert von einem digitalen System verarbeitet werden kann, muss jeder einzelne Wert als ganze Zahl innerhalb eines festgelegten Rasters vorliegen. Der ursprüngliche Messwert wird entsprechend auf einen endlichen Wert gerundet (Quantisierung). An den Begriff des einzelnen Samples knüpft sich darüber hinaus noch eine weitere Bedingung: Jedem einzelnen Wert müssen Steuer- und Kontrolldaten (mindestens eine sample number als Index) zugeordnet sein, damit eine Programmroutine die einzelnen Werte gezielt (in der intendierten Reihenfolge) verarbeiten kann. Diese Bedingungen stellen die zentralen Differenzen zum Kontext der analogen Signalverarbeitung hinsichtlich des Begriffs Sampling dar.</p>
+
+                            <p>Sowohl in der Analog- als auch in der Digitaltechnik hat ein einzelnes Sample für die auditive Wahrnehmung noch keine konkrete Bedeutung als informationstragendes akustisches Element. Im analogen Kontext bezeichnet der Begriff schlicht Messergebnisse physikalischer Vorgänge und im digitalen Kontext abstrakte numerische Werte im Rahmen einer mathematisch beschreibbaren Programmroutine: »A sample is not a unit of perception. A bit is to a number as a sample is to a waveform [...].«154 Ein einzelnes Sample kann zwar bei der Wiedergabe ein hörbares akustisches Resultat erzeugen, dieses ist jedoch mehr von allen in den Signalverlauf eingebundenen technischen Komponenten (maßgeblich vom Lautsprecher als Schallwandler) beeinflusst und spiegelt weniger einen bestimmten Informationsgehalt wieder.</p>
+
+                            <p>Alle Prozesse der Verarbeitung einzelner Samples (wie deren Erfassung, Speicherung oder Ausgabe) haben einen Bezug zu mindestens einem von zwei zeitlichen Bereichen, deren Benennung auf Curtis Roads zurückgeht: Die sampled time scale liegt allen Dauern zugrunde, die vollständig in dem zeitlichen Raster aufgehen, das durch die Konfiguration eines digitalen Systems vorgegeben wird (sample clock). So zum Beispiel die maximale Größe des Zeitfensters, innerhalb dessen bei der Analog-Digital-Wandlung ein einzelner Wert bestimmt wird. Auch die zeitliche Auflösung der Verarbeitung und Ausgabe gespeicherter Samples bemisst sich an dieser Skala. In den Bereich der subsample time scale fallen alle Phänomene, die nicht adäquat innerhalb dieses zeitlichen Rasters aufgelöst werden können. Grundsätzlich betrifft dies alle Modulationen oberhalb der halben Sampling-Rate eines Systems sowie Fluktuationen in Signalen und Spannungen, die sich zwischen der Verarbeitung einzelner Samples ereignen. Eine Begrenzung der Bandbreite analoger Signale ist daher notwendig, um diese zu digitalisieren.</p>
+                        </li>
+                    </ul>
+                    <hr>
+                </section>    
+            </details>
+
             <p>Binär codierte digitale Signale basieren letztlich nur auf zwei differenzierbaren elementaren Zuständen. Abgrenzbare und endliche Folgen aus Kombinationen dieser beiden Zustände können selbst wiederum als übergeordnete Einheit für etwas stehen und somit als Codes für bestimmte Informationen verwendet werden. Auf diese Weise lassen sich auch numerische Werte codieren, die beispielsweise einzelne Amplitudenwerte als Resultate einer Signalabtastung repräsentieren. Und eine ganze Sammlung solcher codierter Werte kann ihrerseits wiederum unter bestimmen Voraussetzungen die Beschreibung eines kontinuierlichen (Audio-)Signalverlaufs ermöglichen. Auf den ersten Blick scheinen also die elementaren Strukturen der Signaltechnik immer nur als pars pro toto Sinn zu stiften. Das einzelne Daten-Bit als elementarste Größe der digitalen Nachrichtentechnik ist in diesem Kontext zu vernachlässigen. Von Relevanz ist vor allem die durch mehrere einzelne Bits darstellbare elementarste Einheit eines digitalen (Audio-)Signals: das einzelne Sample.</p>
 
             <p>Doch welche Bedeutung ist den einzelnen elementaren Bestandteilen eines solchen (Audio-)Signals in unterschiedlichen Kontexten beizumessen? Und wie entwickelte sich die Bezeichnung für einzelne dieser Werte in der analogen und der digitalen (Audio-)Signaltechnik? Hat sich darüber hinaus die Terminologie bezüglich der Handhabung einzelner elementarer Werte im Laufe der Zeit verändert? Findet sich beispielsweise die Ursache für eine terminologische Unschärfe, auf die selbst Jahrzehnte nach den ersten Experimenten mit digitalen Signalen noch hingewiesen werden muss:</p>
@@ -137,8 +166,8 @@
             <p>Der folgende Abschnitt widmet sich diesen Leitfragen folgend den Begriffen Sampling und Sample – verstanden als einzelner, binär codierter numerischer Wert – in unterschiedlichen Konfigurationen der analogen und digitalen Signal- und Übertragungstechnik.</p>
         </section>
 
-        <h3 id="sampling-im-kontext-analoger-signale">3.2.1 – Sampling und Sample im Kontext der analogen Übertragung digitaler Signale</h3>
         <section>
+        <h3 id="sampling-im-kontext-analoger-signale">3.2.1 – Sampling und Sample im Kontext der analogen Übertragung digitaler Signale</h3>
             <p>Im Jahr 1844 erfährt die noch junge Ära der elektronischen Signalübertragung eine nachhaltige Revolution: Der Amerikaner Samuel Finley Breeze Morse sendet nach rund einem Jahrzehnt der experimentellen Vorarbeit (in Kooperation mit Alfred Lewis Vail) die erste offizielle Nachricht über eine 60 Kilometer lange Kabelstrecke von Baltimore nach Washington – codiert im später nach ihm benannten und 1865 zum weltweiten Telegrafiestandard erklärten Morsecode.<label for="sn-122" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-122" class="margin-toggle"/><span class="sidenote">Vgl. Nuszkowski 2013: 3.</span> Die binär codierten Morsezeichen (Folgen aus kurzen und langen elektrischen Spannungsimpulsen gleicher Amplitude sowie den dazwischenliegenden Pausen) müssen dabei manuell in Echtzeit erzeugt werden. An der Empfängerseite werden die seriell übertragenen Impulse optisch oder akustisch dargestellt, damit diese durch einen Telegrafisten manuell decodiert werden können. Mit Farb- und Reliefschreibern, die Papierstreifen analog zu den eingehenden Impulsen markieren oder lochen, können die Telegramme aufgezeichnet werden.<label for="sn-123" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-123" class="margin-toggle"/><span class="sidenote">Vgl. Hiebel et al. 1998: 187.</span> Die Übertragungsgeschwindigkeit der ersten langen Kabelstrecken belief sich auf höchstens zwei telegrafierte Worte pro Minute. Bis zum Jahr 1924 konnte der Datendurchsatz der ersten transatlantischen Kabelstrecke, deren Materialwert sich auf rund 1.200 US-Dollar pro Seemeile belief, zwischen New York und den Azoren auf rund 400 Worte pro Minute erhöht werden.<label for="sn-124" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-124" class="margin-toggle"/><span class="sidenote">Vgl. Ferreira / Higgins 2011: 1447–1448.</span> Erst der von der Firma Siemens & Halske entwickelte, wie eine Schreibmaschine nutzbare Tastenschnelltelegraf (ein Vorläufer des elektronischen Fernschreibers) ermöglicht ab Ende des 19. Jahrhunderts die maschinelle Codierung, Decodierung und Aufzeichnung von Telegrammen und damit erst das Ausschöpfen der maximal verfügbaren Übertragungsgeschwindigkeiten.<label for="sn-125" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-125" class="margin-toggle"/><span class="sidenote">Vgl. Hiebel et al. 1998: 191.</span></p>
 
             <p>Etwa zur gleichen Zeit gelingt 1897 am Ärmelkanal dem damals 23-jährigen Guglielmo Marconi erstmals die drahtlose Übertragung von Morsezeichen. Dadurch wird auch das Zeitalter der Kommunikation über Funkstrecken mit der Übermittlung digitaler Signale, also einer Serie einzelner <em>digits</em><label for="mn-digit" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-digit" class="margin-toggle"/><span class="marginnote"><em>digit</em> (engl.) für Ziffer oder Stelle. Abgeleitet vom lateinischen <em>digitus</em>: der (zum Zählen benutzte) Finger.</span>, eingeläutet.<label for="sn-127" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-127" class="margin-toggle"/><span class="sidenote">Vgl. Nuszkowski 2013: 4</span> Um die stetig wachsende Infrastruktur der kostspieligen, jedoch auch zunehmend leistungsfähigeren Kommunikationskanäle effizient zu nutzen, setzte sich das seit dem Jahr 1883 bekannte wechselzeitige (time division) Multiplex-Verfahren durch:</p>
@@ -187,10 +216,9 @@
 
             <p>Dadurch kommt es in diesem Dokument auch zu einer begrifflichen Unschärfe in der Differenzierung zwischen dem Teilprozess der Abtastung an sich und dem gesamten Prozess der Signalwandlung: In Dieter Schenkels Patentschrift bezeichnen die beiden verwendeten Begriffe <em>to scan</em> und <em>to sample</em> den Vorgang der Abtastung durch eine S&H-Schaltung. Der Begriff <em>to sample</em> bezeichnet darüber hinaus ebenfalls den vollständigen Prozess der Signalwandlung durch die gesamte Baugruppe eines Analog-Digital-Wandlers. Diese terminologische Unschärfe in einer Patentschrift, in der möglichst exakte Formulierungen geboten sind, veranschaulicht, dass die Begriffe und Definitionen in dieser Zeit selbst im Fachdiskurs noch nicht eindeutig geklärt waren. Mit der Zeit wird der Begriff to scan jedoch aus dem Fachdiskurs der (Audio-)Signaltechnik verdrängt. Heutzutage dominiert die Bezeichnung <em>to sample</em> im englischsprachigen und im deutschsprachigen Fachdiskurs gegenüber der ursprünglichen, von einem der Pioniere der PCM-Technologie eingeführten Bezeichnung <em>to scan</em>.</p>
         </section>
-        <hr>
 
-        <h3 id="sampling-im-kontext-analoger-klangsynthese">3.2.2 – Sampling und Sample im Kontext der analogen Klangsynthese</h3>
         <section>
+        <h3 id="sampling-im-kontext-analoger-klangsynthese">3.2.2 – Sampling und Sample im Kontext der analogen Klangsynthese</h3>
             <p>Die Technologie der S&H-Schaltung kam in etwa zur gleichen Zeit nicht nur als zentrales Bauteil in der auf PCM basierenden digitalen Übertragung analoger Audiosignale zur Anwendung. Schon ab Mitte der 1960er Jahre hielt sie Einzug im damals noch jungen Bereich der analogen Klangsynthese. Bis heute wird die S&H-Schaltung dort nicht nur als Komponente in einer Kette zur Signalwandlung von analog in digital eingesetzt. Sie dient in diesem Kontext vorrangig der Erzeugung einer diskontinuierlichen Spannung. Diese wird durch die Abtastung eines kontinuierlichen Eingangssignals erzeugt. Eine so generierte Ausgangsspannung folgt dann proportional einzelnen Größen, die das Eingangssignal konstituieren. Die Ausgangsspannung findet primär Verwendung als Steuerspannung (CV) zur Automation von Parametern der analogen Klangsynthese.<label for="sn-134" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-134" class="margin-toggle"/><span class="sidenote">Vgl. Humpert 1987: 106.</span> Das Ziel ist dabei nicht das digitale Codieren eines kontinuierlichen Eingangssignals.</p> 
 
             <figure>
@@ -209,8 +237,8 @@
             <p>Unabhängig davon wird als einzelnes Sample bis heute sowohl im Kontext der Ansteuerung von Parametern bei der Klangsynthese durch Steuersignale einer S&H-Schaltung als auch im Zuge der Signalwandlung zur PCM-basierten digitalen Signalübertragung kontinuierlicher (analoger) Ausgangssignale ein einzelner momentaner (Spannungs-) Wert bezeichnet. Im Idealfall stellt dieser exakt den Spitzenoder Durchschnittswert der Amplitude eines Signals innerhalb eines möglichst kleinen Zeitfensters dar. Der jeweils einzelne Spannungswert entspricht dabei der momentanen Ladungsspannung eines Bauteils (Kondensator) innerhalb einer S&H-Schaltung und kann daher jede physikalisch mögliche Größe annehmen. Sampling beschreibt demnach genau diesen einen Moment der Werterfassung und damit genau genommen nur einen Teilprozess der Signalwandlung oder der Erzeugung eines Steuersignals. Erst im Rahmen der computergestützten digitalen Signalverarbeitung erfährt die Bezeichnung eines einzelnen Wertes als Sample eine essenzielle terminologische Schärfung.</p>
         </section>
 
-        <h3 id="sampling-im-kontext-digitaler-signale-und-synthese">Sampling und Sample im Kontext digitaler Signaltechnik und Klangsynthese</h3>
         <section>
+        <h3 id="sampling-im-kontext-digitaler-signale-und-synthese">3.2.3 – Sampling und Sample im Kontext digitaler Signaltechnik und Klangsynthese</h3>
             <p>»Das Wesen aller Dinge ist die Zahl« ist einer der zentralen Lehrsätze der antiken pythagoräischen Schule. Der Aphorismus wird Pythagoras von Samos zugeschrieben. Er veranschaulicht den Grundpfeiler der digitalen Signalverarbeitung: Jede medial übertragbare Information ist dabei als Nachricht von messbarer Größe zu verstehen. Denn nach der Analog-Digital-Wandlung wird in diesem Kontext jeder ehemals kontinuierliche Schwingungsverlauf zu einer Serie binär codierter numerischer Werte. Diese Informationen dienen jedoch lediglich als Grundlage zur Beschreibung oder Nachbildung eines ursprünglichen Schwingungsverlaufs.<label for="sn-143" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-143" class="margin-toggle"/><span class="sidenote">Vgl. Harenberg 2003: 78.</span> Während ein analoger Schwingungsverlauf sich mathematisch als kontinuierliche Funktion beschreiben lässt (deren Wertebereich sich theoretisch unendlich fein auflösen lässt), sind digitale Signale mathematisch in Form von diskreten Funktionen beschreibbar (in gestuften und endlichen Werten).
             </p>
 
@@ -228,8 +256,7 @@
             <p>Auch im Jahr 2006 wird also noch auf das gleiche Vokabular für einen einzelnen Wert zurückgegriffen, wie es sich bereits Jahrzehnte zuvor im rein analogen Kontext zur Beschreibung von S&H-Schaltungen etabliert hat. Jedoch hat jeder einzelne als Sample bezeichnete Wert nun systembedingt bereits eine weitere Stufe der Signalverarbeitung durchlaufen: die Quantisierung. Dabei werden die von der S&H-Schaltung erfassten Werte gerundet, um sie einem gleichmäßig gestuften Raster festgelegter Werte anzugleichen. Nur so können diese dann zur weiteren Verarbeitung digital (binär) codiert werden. Miller Puckette weist an dieser Stelle ausdrücklich darauf hin, dass die Repräsentation von Audiosignalen als eine solche sequenzielle Beschreibung immer nur eine gestufte und schrittweise Annäherung an die idealtypisch kontinuierliche Funktion sein kann. Die einzelnen Werte stellen dabei nur eine adressierbare Sammlung von unspezifischen Werten dar:</p>
 
             <blockquote>
-                <p>A real-world audio signal’s amplitude might be expressed as a time-varying voltage or air pressure, but the samples of a digital audio signal are unitless numbers.<label for="sn-146" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-146" class="margin-toggle"/><span class="sidenote">Puckette 2006: 3.</span>
-</p>
+                <p>A real-world audio signal’s amplitude might be expressed as a time-varying voltage or air pressure, but the samples of a digital audio signal are unitless numbers.<label for="sn-146" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-146" class="margin-toggle"/><span class="sidenote">Puckette 2006: 3.</span></p>
             </blockquote>
 
             <p>Mit Nachdruck formuliert er im gleichen Zug, dass digitale Audiosignale daher auch keine intrinsische Relation mit der Zeit haben. Die im Kontext digitaler Signale als Sample bezeichneten Werte sind somit schlicht als ganze Zahlen aus einer endlichen Menge definiert, die unabhängig von der Zeit bearbeitet, gespeichert und übertragen werden können. Dies bedeutet für digitale Audiosignale, dass deren Informationsgehalt nur erhalten bleibt, wenn sie aus all ihren Einzelwerten adäquat rekonstruiert werden können. Daher müssen digitale Audiosignale mindestens aus folgenden beiden Komponenten bestehen, die jeweils eine bestimmte Bedingung erfüllen:
@@ -237,14 +264,12 @@
 
             <ol>
                 <li><span class="newthought">Essenz- oder Quelldaten</span>: binär codierte, endliche numerische Einzelwerte (die einzelnen Samples), die bei der Analog-Digital-Wandlung erfasst wurden oder zur Beschreibung eines zu rekonstruierenden Signals bereits in einem Datenspeicher vorliegen.</li>
-                <li><span class="newthought">Steuerungs- und Kontrollinformationen</span>: ebenfalls binär codierte Datenworte, welche die intendierte Verarbeitung gewährleisten, indem sie einem verarbeitenden System die Informationen (unter anderem die <em>sample numbers</em>) zur korrekten Interpretation und Verarbeitung der Quelldaten bereitstellen.<label for="sn-147" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-147" class="margin-toggle"/><span class="sidenote">Dickreiter et al. 2008: 603.</span>
-</li>
+                <li><span class="newthought">Steuerungs- und Kontrollinformationen</span>: ebenfalls binär codierte Datenworte, welche die intendierte Verarbeitung gewährleisten, indem sie einem verarbeitenden System die Informationen (unter anderem die <em>sample numbers</em>) zur korrekten Interpretation und Verarbeitung der Quelldaten bereitstellen.<label for="sn-147" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-147" class="margin-toggle"/><span class="sidenote">Dickreiter et al. 2008: 603.</span></li>
             </ol>
 
             <p>Digitale Audiosignale geben sich also immer erst durch die korrekte Interpretation aller beinhalteten Datenworte als solche zu erkennen. Dies impliziert auch, dass im Grunde jede beliebige Folge numerischer Werte als Audiosignal interpretiert werden kann. Sie muss nur dementsprechend verarbeitet werden.<label for="sn-148" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-148" class="margin-toggle"/><span class="sidenote">Beispielsweise kann mit der Audiosoftware <em>Audacity</em> selbst ein beliebiges Textdokument als Audiodatei geladen, interpretiert und klanglich ausgegeben werden.</span> Für den Begriff des einzelnen Samples bedeutet dies, dass impliziert wird, dass es sich dabei immer um die Kombination eines numerischen Werts innerhalb eines festgelegten Rasters handelt, dem mindestens eine <em>sample number</em> als Steuer- und Kontrollinformation fest zugeordnet ist.</p>
 
-            <p>Prinzipiell können beliebige numerische Werte in dieser Form, als Samples interpretiert, zum Fundament digitaler Klangsynthese werden. Auf der Basis einzelner Sample-Werte lassen sich ganze Datensätze vollständig und von Grund auf gezielt gestalten. Als Audiosignal wiedergegeben, können daraus akustische Ereignisse verschiedenster Art resultieren. Jedoch ist auch schon ein einzelnes Sample auditiv wahrnehmbar, wenn dieses, eingebettet in einem Signal völliger Stille, über hochwertige Lautsprecher abgespielt wird und dessen Amplitudenwert sich einem Maximum annähert. Solche Impulse sind für den Menschen als Klicken oder Knacken hörbar, im Hörfeld gut zu lokalisieren und können in ihrer Lautheit relativ gut differenziert werden. Eine Tonhöhe oder eine Färbung des Klangs kann jedoch aufgrund der Kürze des Schallereignisses, das auf der Wiedergabe nur eines einzelnen Samples basiert, nicht bestimmt werden.<label for="sn-149" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-149" class="margin-toggle"/><span class="sidenote">Das akustische Phänomen resultiert in diesem Falle aus dem Schwingungsverlauf einer Lautsprechermembran, die nur einmal in einer bestimmten Intensität (in eine Richtung angestoßen) ausgelenkt wird. Es wird daher auch stark von der mechanischen Beschaffen- heit des wiedergebenden Schallwandlers beeinflusst.</span> Bei einer Sampling-Rate von <math><msub><mi>f</mi><mi>s</mi></msub><mo>=</mo><mn>1</mn><mi>S</mi><mi>e</mi><mi>k</mi><mi>u</mi><mi>n</mi><mi>d</mi><mi>e</mi><mo>/</mo><mn>44.100</mn><mi>S</mi><mi>a</mi><mi>m</mi><mi>p</mi><mi>l</mi><mi>e</mi><mi>s</mi></math> (dies entspricht dem CD Standard <math><mn>44</mn><mo>,</mo><mn>1</mn><mi>k</mi><mi>H</mi><mi>z</mi></math>) repräsentiert jedes Sample eine Dauer von gerade einmal <math><mn>0</mn><mo>,</mo><mn>022675</mn><mi>m</mi><mi>s</mi></math>. Die Dauer zwischen zwei solcher Samples <math><mi mathvariant="normal">Δ</mi><mi>t</mi></math> ist demnach als die kleinste zeitliche Einheit zu verstehen, die mittels digitaler Signale nicht nur abgebildet, sondern auch gezielt gestaltet werden kann. Hunderte einzelner Werte müssen unmittelbar nacheinander wiedergegeben werden, um Qualitäten im Frequenzspektrum (Klangfarben) bei einer Wiedergabe erahnen zu lassen. Tausende sind notwendig, damit eine Tonhöhe vernommen werden kann.<label for="sn-150" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-150" class="margin-toggle"/><span class="sidenote">Vgl. Roads 2001: 29.</span>
-</p>
+            <p>Prinzipiell können beliebige numerische Werte in dieser Form, als Samples interpretiert, zum Fundament digitaler Klangsynthese werden. Auf der Basis einzelner Sample-Werte lassen sich ganze Datensätze vollständig und von Grund auf gezielt gestalten. Als Audiosignal wiedergegeben, können daraus akustische Ereignisse verschiedenster Art resultieren. Jedoch ist auch schon ein einzelnes Sample auditiv wahrnehmbar, wenn dieses, eingebettet in einem Signal völliger Stille, über hochwertige Lautsprecher abgespielt wird und dessen Amplitudenwert sich einem Maximum annähert. Solche Impulse sind für den Menschen als Klicken oder Knacken hörbar, im Hörfeld gut zu lokalisieren und können in ihrer Lautheit relativ gut differenziert werden. Eine Tonhöhe oder eine Färbung des Klangs kann jedoch aufgrund der Kürze des Schallereignisses, das auf der Wiedergabe nur eines einzelnen Samples basiert, nicht bestimmt werden.<label for="sn-149" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-149" class="margin-toggle"/><span class="sidenote">Das akustische Phänomen resultiert in diesem Falle aus dem Schwingungsverlauf einer Lautsprechermembran, die nur einmal in einer bestimmten Intensität (in eine Richtung angestoßen) ausgelenkt wird. Es wird daher auch stark von der mechanischen Beschaffen- heit des wiedergebenden Schallwandlers beeinflusst.</span> Bei einer Sampling-Rate von <math><msub><mi>f</mi><mi>s</mi></msub><mo>=</mo><mn>1</mn><mi>S</mi><mi>e</mi><mi>k</mi><mi>u</mi><mi>n</mi><mi>d</mi><mi>e</mi><mo>/</mo><mn>44.100</mn><mi>S</mi><mi>a</mi><mi>m</mi><mi>p</mi><mi>l</mi><mi>e</mi><mi>s</mi></math> (dies entspricht dem CD Standard <math><mn>44</mn><mo>,</mo><mn>1</mn><mi>k</mi><mi>H</mi><mi>z</mi></math>) repräsentiert jedes Sample eine Dauer von gerade einmal <math><mn>0</mn><mo>,</mo><mn>022675</mn><mi>m</mi><mi>s</mi></math>. Die Dauer zwischen zwei solcher Samples <math><mi mathvariant="normal">Δ</mi><mi>t</mi></math> ist demnach als die kleinste zeitliche Einheit zu verstehen, die mittels digitaler Signale nicht nur abgebildet, sondern auch gezielt gestaltet werden kann. Hunderte einzelner Werte müssen unmittelbar nacheinander wiedergegeben werden, um Qualitäten im Frequenzspektrum (Klangfarben) bei einer Wiedergabe erahnen zu lassen. Tausende sind notwendig, damit eine Tonhöhe vernommen werden kann.<label for="sn-150" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-150" class="margin-toggle"/><span class="sidenote">Vgl. Roads 2001: 29.</span></p>
 
             <p>Nicht nur im Bereich des Akustischen, sondern auch auf der Ebene der Datenverarbeitung sind also an die einzelnen Samples zeitliche Bedingungen geknüpft. Bei einer Sampling-Rate von <math><mn>44</mn><mo>,</mo><mn>1</mn><mi>k</mi><mi>H</mi><mi>z</mi></math> können digitale Systeme aufgrund dieser Limitierung kein akustisches Phänomen mit einer Frequenz <math><mi>f</mi><mo>></mo><mn>22.050</mn><mi>H</mi><mi>z</mi></math>, oder anders ausgedrückt, mit einer Dauer von <math><mi mathvariant="normal">Δ</mi><mi>t</mi><mo><</mo><mn>45</mn><mo>,</mo><mn>35</mn><mi>μ</mi><mi>s</mi></math> adäquat abbilden. Bei der mittlerweile nicht unüblichen und deutlich höheren Sampling-Rate von <math><mn>192</mn><mi>k</mi><mi>H</mi><mi>z</mi></math> verläuft die Grenze bei circa <math><mi mathvariant="normal">Δ</mi><mi>t</mi><mo><</mo><mn>5</mn><mi>μ</mi><mi>s</mi></math>. Für den zeitlichen Rahmen, dessen maximale Ausdehnung primär von der Sampling-Rate eines digitalen Systems bestimmt wird, wurde von Curtis Roads die Bezeichnung <em>sampled time scale</em> geprägt. Diese ist relevant für alle Phänomene auf der Basis einzelner Samples und definiert die kleinstmögliche Dauer, die grundsätzlich zwischen einzelnen erfassten Samples verstreicht. Fluktuationen, die sich genau zwischen zwei Samples ereignen, fallen sowohl bei der Analog-Digital-Wandlung als auch bei der Digital-Analog-Wandlung in besonderem Maße ins Gewicht. Curtis Roads beschreibt detailliert die akustischen Auswirkungen von Phänomenen innerhalb dieser Dauern, die er <em>subsample time scale</em> nennt.<label for="sn-151" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-151" class="margin-toggle"/><span class="sidenote">Vgl. Roads 2001: 28–31.</span> Die Grenze zwischen <em>sampled time scale</em> und <em>subsample time scale</em> wird exakt durch die halbe Sampling-Rate eines digitalen Systems bestimmt.<label for="sn-152" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-152" class="margin-toggle"/><span class="sidenote">Vgl. Roads 2001: 6.</span> Beispielsweise sind Alias-Frequenzen bei der Analog-Digital-Wandlung typische und in der Regel unerwünschte Nebenprodukte, deren Ursprung im Bereich der <em>subsample time scale</em> liegt. Alias-Frequenzen sind Artefakte, die durch alle Schwingungen innerhalb eines kontinuierlichen Signals erzeugt werden, welche mit einer Frequenz eines digitalen Systems oszillieren, die stets über der halben Sampling-Rate liegt. Bei einer Sampling-Rate von <math><mn>44</mn><mo>,</mo><mn>1</mn><mi>k</mi><mi>H</mi><mi>z</mi></math> fließt beispielsweise eine für den Menschen nicht hörbare Eingangsfrequenz von 30 kHz als hörbares, das ursprüngliche akustische Ereignis verzerrende Artefakt von <math><mn>11</mn><mo>,</mo><mn>1</mn><mi>k</mi><mi>H</mi><mi>z</mi></math> in das digitale Signal mit ein:</p>
 
@@ -273,13 +298,13 @@
 
 
 
-        <h2 id="sampling-im-juristischen-kontext">3.12 – Sampling im juristischen Kontext</h2>
         <section>
+        <h2 id="sampling-im-juristischen-kontext">3.12 – Sampling im juristischen Kontext</h2>
             <p>Teil der Geschichte des Sampling sind Konflikte um Urheberrechte, Vertriebs und Verwertungsrechte oder allgemein Streitfälle bezüglich der rechtmäßigen Nutzung von bereits veröffentlicht vorliegenden Audiodaten und Musikaufnahmen. Die juristischen Grundlagen und gültigen Gesetze, auf denen Verhandlungen solcher Streitfragen vor Gericht basieren, variieren je nach Gerichtsstandort und sind auch im Laufe der Zeit immer wieder geändert worden. Im Folgenden werden die aktuell gültigen Vorgaben zur Auseinandersetzung mit Streitfragen vor Gericht am Gerichtsstandort Deutschland vorgestellt. Diese resultieren aus dem Rechtsstreit zwischen der Band Kraftwerk und dem Hip Hop-Produzenten Moses Pelham um die Verwendung eines wenige Sekunden langen Samples.</p>
         </section>
 
-        <h3 id="der-fall-metall-auf-metall">3.12.1 – Der Fall Metall auf Metall</h3>
         <section>
+        <h3 id="der-fall-metall-auf-metall">3.12.1 – Der Fall Metall auf Metall</h3>
             <p>Seit dem Jahr 1997 streiten sich die Band Kraftwerk, vertreten durch zwei ihrer Mitglieder – Ralf Hütter und Florian Schneider-Esleben – mit dem Musikproduzenten Moses Pelham um die Benutzung eines Samples. Das Verfahren (I ZR 115/16 – Metall auf Metall IV) durchlief bislang alle Instanzen. Im Jahr 2016 fällte das Bundesverfassungsgericht (BVerfG) das drittletzte Urteil in diesem Prozess. Anschließend beschäftige sich der Gerichtshof der Europäischen Union (EuGH) im Jahr 2019 mit dem Fall und verwies das Verfahren wieder an den Bundesgerichtshof (BGH). Dieser hat den Prozess in seinem Urteil vom 30.04.2020 zur abschließenden Klärung der Streitfragen an das Oberlandesgericht (OLG) verwiesen.<label for="sn-462" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-462" class="margin-toggle"/><span class="sidenote">Vgl. Fischer 2020a.</span> Die Aufarbeitung des gesamten Verfahrens ist ein Themenkomplex für sich und wird daher im Rahmen dieses Buches nicht geleistet.<label for="sn-463" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-463" class="margin-toggle"/><span class="sidenote">
                 Eine umfassende Darstellung und Kritik des Verfahrens bis zum Jahr 2015 liefert Frédéric Döhls Aufsatz <em>Einige Anmerkungen zur Metall-auf-Metall Rechtsprechung des Bundesgerichtshofs und dessen Folgen für fremdreferenzielles Komponieren qua Sound Sampling</em>. Siehe diesbezüglich auch: <em>Anmerkungen zum aktuellen Rechtsstreit über Musik-Sampling – »Kraftwerk (Ralf Hütter) vs. Moses Pelham« – und zur Frage nach rassismuskritischer, semiotischer Demokratie</em> (Ismaiel-Wendt 2018), <em>Mashup in der Musik – Fremdreferenzielles Komponieren, Sound Sampling und Urheberrecht</em> (Frédéric Döhl 2016), <em>Kreatives Remixing – Musik im Spannungsfeld von Urheberrecht und Kunstfreiheit</em> (Florian Pötzlberger 2018), <em>Sampling in der Musikproduktion. Das Spannungsfeld zwischen Urheberrecht und Kreativität</em> (Georg Fischer 2020) und <em>Creative License – The Law and Culture of Sampling</em> (Kembrew McLeod / Peter DiCola 2011).</span>
             An dieser Stelle soll jedoch das Urteil des BGH vom 30.04.2020 thematisiert und das darin implizierte Verständnis von Sampling erläutert und hinsichtlich der vorangegangenen Urteile durch das BVerfG und den EuGH diskutiert werden.<label for="sn-464" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-464" class="margin-toggle"/><span class="sidenote">Da das Urteil des BGH während der Bearbeitung dieses Abschnittes noch nicht vorlag, wird sich im Folgenden auf die <a href="https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2020/2020046.html" target="_blank">Pressemitteilungen zum Urteil des BGH vom 30. April 2020</a> bezogen. Diese beinhaltet die zentralen Punkte der Urteilsverkündung. Das Urteil wurde am 22.06.2020 veröffentlicht.</span> Gegenstand des Rechtsstreits vor dem BGH war folgender Sachverhalt:</p>
@@ -297,8 +322,8 @@
             </blockquote> 
         </section>
 
-        <h3 id="juristische-vorgaben-zu-sampling">3.12.2 – Juristische Vorgaben zu Sampling seit dem 30.04.2020</h3>
         <section>
+        <h3 id="juristische-vorgaben-zu-sampling">3.12.2 – Juristische Vorgaben zu Sampling seit dem 30.04.2020</h3>
             <p>Durch das vom BGH gefällte Urteil sind nun maßgebliche Vorschriften zusammengetragen worden, die zur Beurteilung von Streitfragen bezüglich der Nutzung von Samples gelten. Auf deren Grundlage werden Gerichte in Deutschland ab sofort urteilen müssen. Die Vorschriften, die den Schutz der Rechte von Tonträgerherstellern und -verwertern betreffen, sind die folgenden:</p>
 
             <p>Die europäische Richtlinie zur Harmonisierung bestimmter Aspekte des Urheberrechts (Art. 2 Buchst. c 2001/29/EG) sieht vor, dass in den Mitgliedsstaaten der Europäischen Gemeinschaft ausschließlich die Hersteller von Tonträgern darüber verfügen können, durch wen und in welcher Form diese vervielfältigt werden dürfen oder nicht. Die einzelnen Mitgliedsstaaten können diesbezüglich jedoch Ausnahmen und Beschränkungen vornehmen, wenn es sich bei der Nutzung um eine Form des Zitierens handelt (Art. 5 Abs. 3 Buchst. d 2001/29/EG). Dazu muss der betroffene Schutzgegenstand allerdings bereits der Öffentlichkeit rechtmäßig zugänglich gemacht worden sein, die Quelle einschließlich des Namens des Urhebers angegeben werden, die Nutzung den anständigen Gepflogenheiten entsprechen und in ihrem Umfang durch den besonderen Zweck (zu Beispiel im Zuge von Kritiken oder Rezensionen) gerechtfertigt sein. Ausnahmen können auch für Fälle von sogenannter beiläufiger Einbeziehung gelten sowie der Nutzung zum Zweck der Karikatur, Parodie oder Pastiche (Art. 5 Abs. 3 Buchst. i und k 2001/29/EG). Eine weitere europäische Richtlinie sieht vor, dass nur die Hersteller von Tonträgern das Recht dazu haben, diese und Kopien davon durch Veräußerung oder auf sonstige Weise der Öffentlichkeit zur Verfügung zu stellen (2006/115/EG Art. 9 Abs. 1 Buchst. b). Diese Vorschriften müssen bei einer Urteilsfindung allerdings immer in Einklang mit dem Urheberrechtsgesetz und dem Grundgesetz gebracht werden. Dahingehend gelten die beiden folgende Vorschriften: Das Grundgesetz (Art. 5 Abs. 3 Satz 1) besagt, dass Kunst, Wissenschaft, Forschung und Lehre frei sind. Darüber hinaus darf laut Urheberrechtsgesetz (§ 24 Abs. 1) ein selbstständiges Werk, das in freier Benutzung eines anderen geschaffen worden ist, ohne die Zustimmung des Urhebers des benutzten Werks veröffentlicht und verwertet werden.<label for="sn-469" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-469" class="margin-toggle"/><span class="sidenote">Vgl. Maßgebliche Vorgaben BGH 2020b.</span> Mit seinem Urteil bestätigt der BGH damit die Vorgaben des EuGH und verwirft in weiten Teilen Aspekte, auf denen das BVerfG sein Urteil im Jahr 2016 stützte. Damals reichte Moses Pelham Verfassungsbeschwerde ein, da er sich durch die vorangegangenen juristischen Entscheidungen als Künstler in der Ausübung seiner Kunst eingeschränkt sah. Bemerkenswert am Urteil des BVerfG von 2016 ist vor allem die Forderung der Bundesrechtsanwaltskammer im Rahmen ihrer Stellungnahme zum Urteil:</p>
@@ -333,10 +358,10 @@
 
 
     <article>
-        <h2 id="bedeutungen-begriff-sampling">Bedeutungen des Begriffs Sampling</h2>
         <section>
+        <h2 id="bedeutungen-begriff-sampling">Bedeutungen des Begriffs &raquo;Sampling&laquo;</h2>
             <ol>
-                <li>Sample verweist auf einen einzelnen Sample-Wert und damit auf
+                <li>Sample verweist auf einen einzelnen Sample-Wert und damit auf:
                     <ul>
                         <li>Die Aufnahme und Wiedergabe von Schallereignissen mit elektromechanischen Technologien</li>
                         <li>Das Erfassen einer momentanen Signal- oder Ladungsspannung</li>
@@ -348,7 +373,7 @@
                         <li>Die autonome Erstellung einer Audiodatei durch ein künstliches neuronales Netzwerk</li>
                     </ul>
                 </li>
-                <li>Sampling verweist in musikbezogenen Kontexten auf
+                <li>Sampling verweist in musikbezogenen Kontexten auf:
                     <ul>
                         <li>Die (instrumentale) Wiedergabe von gespeichert vorliegenden Audiodateien</li>
                         <li>Die automatisierte Aufzeichnung von Audiosignalen mit einer instrumental spielbaren Maschine</li>
@@ -361,14 +386,14 @@
                         <li>Das Bearbeiten und Manipulieren von digital vorliegenden Audiodaten</li>
                     </ul>
                 </li>
-                <li>Sampling verweist innerhalb von Musikkulturen auf
+                <li>Sampling verweist innerhalb von Musikkulturen auf:
                     <ul>
                         <li>Das Übertragen, Verwenden und Verändern von bestimmten, bereits vorliegenden Klangereignissen aus künstlerisch-ästhetischen Beweggründen</li>
                         <li>Die Bezugnahme auf bestimmte Klangereignisse durch deren gezielte Dekontextualisierung</li>
                         <li>Das Übertragen von Klangereignissen, um auf bestimmte Personen, Ereignisse und Sachverhalte Bezug zu nehmen</li>
                     </ul>
                 </li>
-                <li>Sampling verweist durch die Übertragung auf außermusikalische Bereichen auf
+                <li>Sampling verweist durch die Übertragung auf außermusikalische Bereichen auf:
                     <ul>
                         <li>Formen der medientechnischen Vervielfältigung und Reproduktion</li>
                         <li>Strategien der Aneignung oder Appropriation</li>
@@ -376,17 +401,17 @@
                         <li>Die Transformation und Gestaltung von Persönlichkeit</li>
                     </ul>
                 </li>
-                <li>Sampling verweist im juristischen Kontext
+                <li>Sampling verweist im juristischen Kontext auf:
                     <ul>
-                        <li>Auf jede Form der digitalen Vervielfältigung von bereits veröffentlicht vorliegenden Medieninhalten (Gerichtsstandort Deutschland, beziehungsweise Europa)</li>
+                        <li>Alle Formen der digitalen Vervielfältigung von bereits veröffentlicht vorliegenden Medieninhalten (Gerichtsstandort Deutschland, beziehungsweise Europa)</li>
                 </li>
             </ol>     
         </section>
 
-        <h2 id="bedeutungen-begriff-sample">Bedeutungen des Begriffs</h2>
         <section>
+        <h2 id="bedeutungen-begriff-sample">Bedeutungen des Begriffs &raquo;Sample&laquo;</h2>
             <ol>
-                <li>Sample verweist auf einen einzelnen Sample-Wert und damit auf
+                <li>Sample verweist auf einen einzelnen Sample-Wert und damit auf:
                     <ul>
                         <li>Die ermittelte Ladungsspannung eines Kondensators bei der Signalabtastung</li>
                         <li>Einen quantisierten ganzzahligen Messwert bei der Signalwandlung</li>
@@ -404,7 +429,7 @@
                         <li>Die kleinste Materialeinheit, auf die (instrumental) zugegriffen werden kann</li>
                     </ul>
                 </li>
-                <li>Sample verweist auf zwei und mehr Sample-Werte und damit auf
+                <li>Sample verweist auf zwei und mehr Sample-Werte und damit auf:
                     <ul>
                     <li>Eine Wavetable (Verbund aus indexierten Einzelwerten), die</li>
                         <ul>
@@ -453,7 +478,7 @@
                         </ul>
                     </ul>
                 </li>
-                <li>Sample verweist im übertragenen Sinne auf
+                <li>Sample verweist im übertragenen Sinne auf:
                     <ul>
                         <li>Eine Einheit eines sich angeeigneten Materials, egal welcher Form</li>
                         <li>Ein Materialmuster, das einen externen Zusammenhang exemplifiziert oder auf diesen verweist</li>
@@ -461,27 +486,27 @@
                         <li>Aspekte, Konzepte oder Ideen, die dekontextualisiert oder übertragen wurden</li>
                     </ul>
                 </li>
-                <li>Sample verweist als Beschriftung eines Buttons, Icons oder Labels eines Interfaces
+                <li>Sample verweist als Beschriftung eines Buttons, Icons oder Labels eines Interfaces auf:
                     <ul>
-                        <li>Auf das Starten einer Programmroutine eines Instruments zur Digitalisierung (Aufnahme) eines Eingangssignals</li>
-                        <li>Auf eine gespeicherte Audiodatei</li>
-                        <li>Auf eine leere Speicherposition, in die Daten einer Audiodatei geschrieben oder geladen werden können</li>
-                        <li>Auf ein Sound-Preset (im Sinne der zuvor genannten Kategorie Sample als Sound-Sample)</li>
+                        <li>Das Starten einer Programmroutine eines Instruments zur Digitalisierung (Aufnahme) eines Eingangssignals</li>
+                        <li>Eine gespeicherte Audiodatei</li>
+                        <li>Eine leere Speicherposition, in die Daten einer Audiodatei geschrieben oder geladen werden können</li>
+                        <li>Ein Sound-Preset (im Sinne der zuvor genannten Kategorie Sample als Sound-Sample)</li>
                     </ul>
                 </li>
             </ol>
         </section>
+        <hr>
 
-
-        <h2 id="references-heading">Literatur</h2>
         <section>
+        <h2 id="references-heading">Literatur</h2>
             <ul>
-                <li>Alpert, Marco / Rossum, Dave (1981): »E-mu System Emulator Operating Instructions«. https://synthark.org/Archive/EmulatorArchive/Emulator-I.html.</li>
-                <li>Anderton, Craig (1985): »Emulator II Owners Manual«. https://synthark.org/Archive/EmulatorArchive/Emulator-II.html.</li>
-                <li>Anderton, Craig (1986): »Emax Owners Manual Version 2.0«. https://synthark.org/Archive/EmulatorArchive/Emax.html.</li>
+                <li>Alpert, Marco / Rossum, Dave (1981): »<a href="https://synthark.org/Archive/EmulatorArchive/Emulator-I.html" target="_blank">E-mu System Emulator Operating Instructions</a>«.</li>
+                <li>Anderton, Craig (1985): »<a href="https://synthark.org/Archive/EmulatorArchive/" target="_blank">Emulator II Owners Manual</a>«.</li>
+                <li>Anderton, Craig (1986): »Emax Owners Manual Version 2.0«. .</li>
                 <li>Benjamin, Walter (1977 [1936]): Das Kunstwerk im Zeitalter seiner technischen Reproduzierbarkeit – Drei Studien zur Kunstsoziologie. 3. Aufl. Frankfurt: Suhrkamp.</li>
-                <li>BGH (2020a): »Urteil des Bundesgerichtshof I ZR 115/16 in dem Fall Metall auf Metall«. http://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Gericht=bgh&Art=en&client=12&pos=0&anz=1&Blank=1.pdf&nr=107050.
-                BGH (2020b): »Urteil vom 30. April 2020 – I ZR 115/16 – Metall auf Metall IV«. In: Mitteilungen der Pressestelle. (46).</li>
+                <li>BGH (2020a): »<a href="http://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Gericht=bgh&Art=en&client=12&pos=0&anz=1&Blank=1.pdf&nr=107050" target="_blank">Urteil des Bundesgerichtshof I ZR 115/16 in dem Fall Metall auf Metall</a>«.</li>
+                <li>BGH (2020b): »Urteil vom 30. April 2020 – I ZR 115/16 – Metall auf Metall IV«. In: Mitteilungen der Pressestelle. (46).</li>
                 <li>Blesser, Barry / Salter, Linda-Ruth (2013): »Hearing Events in Space«. In: On listening. Hg. v. Angus Carlyle u. Cathy Lane. Devon: Uniformbooks.</li>
                 <li>Bonz, Jochen (2006): »Sampling. Eine postmoderne Kulturechnik«. In: Kulturschutt. Über das Recycling von Theorien und Kulturen. Hg. v. Christoph Jacke, Eva Kimminich u. Siefried J. Schmidt. Bielefeld: transcript, 333–353.</li>
                 <li>Brauns, Jörg (2003): »Schauplätze – Untersuchung zur Theorie und Geschichte der Dispostive visueller Medien«. Weimar: Bauhaus-Universität Weimar.</li>
@@ -490,15 +515,15 @@
                 <li>BVerfG (2016): »Urteil des Ersten Senats vom 31. Mai 2016 – 1 BvR 1585/13 – Rn. (1-125)«.</li>
                 <li>Card, Stuart K. / Moan, Thomas P. / Newell, Allen (1983): The Psychology of Human-Computer Interaction. London: Lawrence Erlbaum Associates.</li>
                 <li>Carroll, John M. (1997): »Human-Computer Interaction: Psychology as a Science of Design«. In: The Annual Review of Psychology. University of Colorado (48), 61–83.</li>
-                <li>Chinneck, John W. (2016): »Practical Optimization – A Gentle Introduction«. http://www.sce.carleton.ca/faculty/chinneck/po.html.</li>
+                <li>Chinneck, John W. (2016): »<a href="http://www.sce.carleton.ca/faculty/chinneck/po.html" target="_blank">Practical Optimization – A Gentle Introduction</a>«.</li>
                 <li>Chion, Michel (1983): Guide des objets sonores – Pierre Schaeffer et la recherche musicale. Paris: Éditions Buchet Chastel; Institut National de la Communication Audiovisuelle.</li>
-                <li>Clausen, Michael / Müller, Meinard (2001): »Zeit-Frequenz-Analyse und Wavelettransformation. Skript zur Vorlesung Sommersemester 2001«. https://www.audiolabs-erlangen. de/content/05-fau/professor/00-mueller/03-publications/2001_ClausenMueller_ Wavelettransformation_CourseNotes.pdf.</li>
+                <li>Clausen, Michael / Müller, Meinard (2001): »<a href="https://www.audiolabs-erlangen.de/content/05-fau/professor/00-mueller/03-publications/2021_Mueller_FMP_Signals.pdf" target="_blank">Zeit-Frequenz-Analyse und Wavelettransformation. Skript zur Vorlesung Sommersemester 2001</a>«.</li>
                 <li>Davies, Hugh (1996): »A History of Sampling«. In: Organised Sound. Cambridge University Press 1 (1), 3–11, DOI: 10.1017/S135577189600012X.</li>
                 <li>Denk, Felix / von Thülen, Sven (2012): Der Klang der Familie – Berlin, Techno und die Wende. Frankfurt a. M.: Suhrkamp.</li>
                 <li>Diaconu, Mădălina (2013): Phänomenologie der Sinne. Stuttgart: Reclam (Grundwissen Philosophie).</li>
                 <li>Dickreiter, Michael / Dittel, Volker / Hoeg, Wolfgang / Wöhr, Martin (2008): Handbuch der Tonstudiotechnik. 7. Aufl. München: ARD.ZDF Medienakademie.</li>
                 <li>Diederichsen, Diedrich (1995): »Sampling in der Popmusik«. In: Arbeitsberichte der Lehrkanzel für Kommunikationstheorie. Hg. v. Hans-Ulrich Reck u. Mathias Fuchs. Hochschule für angewandte Kunst in Wien (4), 44–50.</li>
-                <li>Döhl, Frédéric (2015): »Einige Anmerkungen zur Metall-auf-Metall-Rechtsprechung des Bundesgerichtshofs und dessen Folgen für fremdreferenzielles Komponieren qua Sound Sampling«. Mediale Kontrolle unter Beobachtung. http://www.medialekontrolle.de.</li>
+                <li>Döhl, Frédéric (2015): »Einige Anmerkungen zur Metall-auf-Metall-Rechtsprechung des Bundesgerichtshofs und dessen Folgen für fremdreferenzielles Komponieren qua Sound Sampling«. Mediale Kontrolle unter Beobachtung. <a href="https://www.medialekontrolle.de" target="_blank">www.medialekontrolle.de</a>.</li>
                 <li>Döhl, Frédéric (2016): Mashup in der Musik – Fremdreferenzielles Komponieren, Sound Sampling und Urheberrecht. Bielefeld: transcript.</li>
                 <li>Döhl, Frédéric / Wöhrer, Renate (Hg.) (2014): Zitieren, Appropriieren, Sampeln – Referenzielle Verfahren in den Gegenwartskünsten. Bielefeld: transcript.
                 Enders, Bernd (1997): Lexikon Musikelektronik. 3. Aufl. Mainz: Atlantis; Schott.</li>
@@ -507,7 +532,7 @@
                 <li>Feige, Daniel Martin (2014): »Bezugnahmen von Kunstwerken untereinander – Eine Rekonstruktion im Geiste Nelson Goodmans und Arthur C. Dantos«. In: Zitieren, appropriieren, sampeln. Hg. v. Frédéric Döhl u. Renate Wöhrer. Bielefeld: transcript, 23–42.</li>
                 <li>Ferreira, Paulo / Higgins, John (2011/10/01, 2011): »The Establishment of Sampling as a Scientific Principle—A Striking Case of Multiple Discovery«. In: Notices of the American Mathematical Society. 58 (10), 1446–1450.</li>
                 <li>Fischer, Georg (2013): »Jäger und Sampler. Kreativität und Innovation am Beispiel des Samplings«. (Diplomarbeit) Berlin: Technische Universität Berlin – Institut für Soziologie.</li>
-                <li>Fischer, Georg (2020a): »Bundesgerichtshof stärkt Pressefreiheit gegenüber Urheberrecht. Sampling weiterhin nur halb legal«. https://irights.info/artikel/bundesgerichtshof-staerktpressefreiheit-gegenueber-urheberrecht-sampling-weiterhin-nur-halb-legal/30077.</li>
+                <li>Fischer, Georg (2020a): »<a href="https://irights.info/artikel/bundesgerichtshof-staerktpressefreiheit-gegenueber-urheberrecht-sampling-weiterhin-nur-halb-legal/30077." target="_blank">Bundesgerichtshof stärkt Pressefreiheit gegenüber Urheberrecht. Sampling weiterhin nur halb legal</a>«. </li>
                 <li>Fischer, Georg (2020b): Sampling in der Musikproduktion – Das Spannungsfeld zwischen Urheberrecht und Kreativität. Marburg: Büchner.</li>
                 <li>Flick, Uwe (1992): »Combining Methods – Lack of Methodology: Discussion of Sotirakopoulou and Breakwell«. In: Ongoing Production on Social Representations: Poductions Vives sur les Représentations Sociales. (1), 43–48.</li>
                 <li>Flick, Uwe (2008): Triangulation – Eine Einführung. Hg. v. Ralf Bohnsack, Uwe Flick, Christian Lüders u. Jo Reichertz. Wiesbaden: VS Verlag für Sozialwissenschaften (Qualitative sozialforschung. Praktiken – Methodologien – Anwendungsfelder).</li>
@@ -520,7 +545,7 @@
                 <li>Gibbs, Tony (2007): The Fundamentals of Sonic Art and Sound Design. Lausanne: AVA Publishing.</li>
                 <li>Grisey, Gérard (1987): »Tempus ex Machina: A Composers Reflections on Musical Time«. In: Contemporary Music Review. 2 (1), 239–275.</li>
                 <li>Großmann, Rolf (1995): »Xtended Sampling«. In: Arbeitsberichte der Lehrkanzel für Kommunikationstheorie. Hg. v. Hans Ulrich Reck u. Mathias Fuchs. Hochschule für angewandte Kunst in Wien (4), 38–43.</li>
-                <li>Großmann, Rolf (1998): »Xtended Sampling II – HTML statements«. http://audio.unilueneburg.de/webseiten/xsamp/xsampfr.htm.</li>
+                <li>Großmann, Rolf (1998): »<a href="http://archiv.llaudioll.de/webseiten/xsamp/xsampfr.htm" target="_blank">Xtended Sampling II – HTML statements</a>«.</li>
                 <li>Großmann, Rolf (2004): »Signal, Material, Sampling«. In: Übertragung – Transfer – Metapher: Kulturtechniken, ihre Visionen und Obsessionen. Hg. v. Sabine Sanio u. Christian Scheib. Bielefeld: Kerber, 91–110.</li>
                 <li>Großmann, Rolf (2005): »Collage, Montage, Sampling – Ein Streifzug durch (medien-) materialbezogene ästhetische Strategien«. In: Sound: Zur Technologie und Ästhetik des Akustischen in den Medien. Hg. v. Harro Segeberg u. Frank Schätzlein. Marburg: Schüren Verlag (Schriftenreihe der Gesellschaft für Medienwissenschaft – GfM), 308–331.</li>
                 <li>Großmann, Rolf (2008): »Verschlafener Medienwander«. In: Positionen – Beiträge zur Neuen Musik. (74), 6–9.</li>
@@ -534,7 +559,7 @@
                 <li>Harenberg, Michael (2003): »Virtuelle Instrumente zwischen Simulation und (De)Konstruktion«. In: Soundcultures: Über elektronische und digitale Musik. Hg. v. Marcus S. Kleiner u. Achim Szepanski. 2. Aufl. Frankfurt a. M.: Suhrkamp, 69–93.</li>
                 <li> Hartmann, Tobias (2018a): »Happy Mapping«. In: Zweifel und Zwänge. Journal der Kunsthochschule für Medien Köln. Hg. v. Hans Ulrich Reck. Köln: Verlag der Kunsthochschule für Medien Köln (Kunst als Medientheorie), 36–39.</li>
                 <li>Hartmann, Tobias (2018b): »Spooky spielt Jonny«. In: Ernst Krenek: Nicht nur Komponist. Hg. v. Gernot Gruber, Claudia Maurer Zenck u. Matthias Schmidt. Basel: Edition Argus (Ernst Krenek Studien), 19–29.</li>
-                <li> Heine, William K. (1977): »A laser scanning phonograph record player«. http://www.aes. org/e-lib/browse.cfm?elib=3098.</li>
+                <li> Heine, William K. (1977): »<a href="http://www.aes.org/e-lib/browse.cfm?elib=3098" target="_blank">A laser scanning phonograph record player</a>«.</li>
                 <li>Hellbrück, Jürgen / Ellermeier, Wolfgang (2004): Hören – Physiologie, Psychologie und Pathologie. 2. Aufl. Göttingen: Hogrefe.
                 Hiebel, Hans H. / Hiebler, Heinz / Kogler, Karl / Walitsch, Herwig (1998): Die Medien. Stuttgart: UTB.</li>
                 <li>Hope, Adrian (1977): »A century of recorded sound«. In: New Scientist. 76 (1083), 797–799.</li>
@@ -542,7 +567,7 @@
                 Huron, David (2007): Sweet Anticipation – Music and the Psychology of Expectation. London: MIT Press.</li>
                 <li>Ismaiel-Wendt, Johannes Salim (2011): tracks’n’treks. Populäre Musik und Postkoloniale Analyse. Münster: Unrast.</li>
                 <li>Ismaiel-Wendt, Johannes Salim (2018): »Anmerkungen zum Rechtsstreit über Musik-Sampling – »Kraftwerk (Ralf Hütter) vs. Moses Pelham« – und zur Frage nach rassismuskritischer, semiotischer Demokratie«. In: Musik und Stadt. Wiesbaden: Springer (Jahrbuch für Musikwirtschaftsund Musikkulturforschung), 103–112.</li>
-                <li>Jecklin, Jürg (2003): »Theorie der Tontechnik – Digitale Audiotechnik«. http://www. sengpielaudio.com/.</li>
+                <li>Jecklin, Jürg (2003): »Theorie der Tontechnik – Digitale Audiotechnik«. <a href="https://www.sengpielaudio.com/" target="_blank">www.sengpielaudio.com</a>.</li>
                 <li>John, Bonnie et al. (2002): »Automating CPM-GOMS«. In: Proceedings of the SIGCHI conference on human factors in computing systems. Minneapolis: Association for Computing Machinery, 147–154.</li>
                 <li>John, Bonnie E. / Gray, Wayne D. (1995): »CPM-GOMS: An Analysis Method for Tasks with Parallel Activities«. In: CHI 95 Conference Companion, 393–394.</li>
                 <li>Kalu, Joy Kristina / Wihstutz, Benjamin (2014): »Memory Plays – Zum Reenactment von Filmen bei Gib Squad und der Wooster Group«. In: Zitieren, appropriieren, sampeln. Hg. v. Frédéric Döhl u. Renate Wöhrer. Bielefeld: transcript, 95–112.</li>
@@ -557,39 +582,39 @@
                 <li>Koelsch, Stefan (2019): »Music and the Brain«. In: Foundations in music psychology. Theory and research. Cambridge: MIT Press, 407–458.</li>
                 <li>Kreidler, Johannes (2012a): »Das totale Archiv«. In: Musik mit Musik: Texte 2005 – 2011. Hof-heim: Wolke Verlag, 221–247.</li>
                 <li>Kreidler, Johannes (2012b): »Medien der Komposition«. In: Musik mit Musik: Texte 2005 – 2011. Hofheim: Wolke Verlag, 34–52.</li>
-                <li>Kvifte, Tellef (2007): »Digital Sampling and Analogue Aesthetics«. https://www.researchgate. net/publication/234037742.</li>
+                <li>Kvifte, Tellef (2007): »<a href="https://www.researchgate.net/publication/234037742" target="_blank">Digital Sampling and Analogue Aesthetics</a>«.</li>
                 <li>Lachmayer, Herbert (1995): »Psychosampling«. In: Arbeitsberichte der Lehrkanzel für Kommunikationstheorie. Hg. v. Hans Ulrich Reck u. Mathias Fuchs. Hochschule für angewandte Kunst in Wien (4), 30–31.</li>
                 <li>Laderman, David / Westrup, Laurel (Hg.) (2014): Sampling Media. New York: Oxford University Press.</li>
                 <li>Landy, Leigh (2006): »Electroacoustic Music Studies and Accepted Terminology: You can’t have one without the other«. In: Proceedings of the EMS – Electroacoustic Music Studies Network. (6).</li>
                 <li>Landy, Leigh (2007): Understanding the Art of Sound Organization. London: MIT Press.</li>
-                <li>Lintzel, Aram (2001): »Der Sound der Transcodierung«. https://www.heise.de/tp/features/Der-Sound-der-Transcodierung-3448544.html.</li>
+                <li>Lintzel, Aram (2001): »<a href="https://www.heise.de/tp/features/Der-Sound-der-Transcodierung-3448544.html" target="_blank"> Der Sound der Transcodierung</a>«.</li>
                 <li>Miller, Paul D. (Hg.) (2008): Sound Unbound – Sampling digital Music and Culture. Hg. v. Paul D. Miller. London: MIT Press.</li>
                 <li>London, Justin (2012): Hearing in Time. London: Oxford University Press.</li>
                 <li>Lotman, Juri Michailowitsch (1981): Kunst als Sprache – Untersuchungen zum Zeichencharakter von Literatur und Kunst. Hg. v. Klaus Städtke. Leipzig: Reclam.</li>
-                <li>Lösener, Bernhard (2017): »Der Fairlight CMI – Die Allmachtsmaschine«. https://www. keyboards.de/stories/der-fairlight-cmi/.</li>
+                <li>Lösener, Bernhard (2017): »<a href="https://www.keyboards.de/stories/der-fairlight-cmi/" target="_blank">Der Fairlight CMI – Die Allmachtsmaschine</a>«.</li>
                 <li>Lüke, Hans Dieter (1999): »The Origins of the Sampling Theorem«. In: IEEE Communications Magazine, 106–108.</li>
                 <li>Malcolm, Donald G. / Roseboom, John H. / Clark, Charles E. / Fazar, W. (1959): »Application of a Technique for Research and Development Program Evaluation«. In: Operations Research. 7 (5), 646–669.</li>
                 <li>Mathews, Max V. (1963): »The Digital Computer as a Musical Instrument«. In: Science. American Association for the Advancement of Science 142 (3592), 553–557.</li>
-                <li>Mauchly, J. William (1985): »Advanced Sampler’s Guide«. https://www.deepsonic.ch/deep/ docs_manuals/ensoniq_mirage_advanced_sampler's_guide.pdf.</li>
+                <li>Mauchly, J. William (1985): »<a href="https://www.deepsonic.ch/deep/docs_manuals/ensoniq_mirage_advanced_sampler's_guide.pdf" target="_blank">Advanced Sampler’s Guide</a>«.</li>
                 <li>Mauer, Barry (2014): »Rigorous Infidelity – Whole Text Sampling in the Curatorial Work of Henri Langlois, Dewey Phillips and Jean-François Lyotard«. In: Sampling Media. Hg. v. David Laderman u. Laurel Westrup. New York: Oxford University Press, 60–72.</li>
                 <li>McGovern, Fiona (2014): »Referenzen und Appropriation in der künstlerischen Ausstellungspraxis«. In: Zitieren, appropriieren, sampeln. Hg. v. Frédéric Döhl u. Renate Wöhrer. Bielefeld: transcript, 113–136.</li>
                 <li>McLeod, Kembrew / DiCola, Peter (2011): Creative License – The Law and Culture of Sampling. London: Duke University Press.</li>
-                <li>Merlier, Bertrand (2014): »The Sampler – A Historical, Musicological and Phenomenological Study«. http://tc2.free.fr/merlier/articles/MerlierEMS14ArticleGB.pdf.</li>
+                <li>Merlier, Bertrand (2014): »<a href="http://tc2.free.fr/merlier/articles/MerlierEMS14ArticleGB.pdf" target="_blank">The Sampler – A Historical, Musicological and Phenomenological Study</a>«.</li>
                 <li>Mikos, Lothar (2003): »Interpolation and sampling: Kulturelles Gedächtnis und Intertextualität im HipHop«. In: HipHop: Globale Kultur – lokale Praktiken. Hg. v. Jannis Androutsopoulos. Bielefeld: transcript (Cultural studies), 64–84.</li>
                 <li>Miller, Paul D. (2004): Rhythm Science. London: MIT Press.</li>
                 <li>Motte-Haber, Helga de la / Rötter, Günther (Hg.) (2005): Musikpsychologie – Handbuch der Systematischen Musikwissenschaft. Bremen: Laaber.</li>
                 <li>Navas, Eduardo (2012): Remix Theory – The Aesthetics of Sampling. Cham: Springer Nature.</li>
                 <li>Nuszkowski, Heinrich (2013): Digitale Signalübertragung – Grundlagen der digitalen Nachrichtenübertragungssysteme. Hg. v. Jörg Vogt. 3. Aufl. Dresden: Vogt.</li>
                 <li>Nyre, Lars (2008): Sound Media – From Live Journalism to Music Recording. New York: Routledge.</li>
-                <li>o. V. (o. J.): »Imagine – Introducing the Emulator Polyphonic Digital Keyboard Instrument«. https://synthark.org/Archive/EmulatorArchive/Emulator-I.html.</li>
-                <li>o. V. (2004): Specification of the Digital Audio Interface – The AES/EBU Interface. 3. Aufl. Grand-Saconnex: European Broadcasting Union (Tech 3000) https://tech.ebu.ch/ publications/tech3250.</li>
-                <li>o. V. (2019): »Octatrack DPS-1 Dynamic Performance Sampler – Users Manual«. https://www. elektron.se/wp-content/uploads/2018/06/Octatrack-User-Manual_ENG_OS1.31_191029. pdf.</li>
-                <li>o. V. (2020): »OP-Z User Guide«. https://teenage.engineering/guides/op-z.</li>
+                <li>o. V. (o. J.): »<a href="https://synthark.org/Archive/EmulatorArchive/Emulator-I.html" target="_blank">Imagine – Introducing the Emulator Polyphonic Digital Keyboard Instrument</a>«.</li>
+                <li>o. V. (2004): Specification of the Digital Audio Interface – The AES/EBU Interface. 3. Aufl. <a href="https://tech.ebu.ch/publications/tech3250" target="_blank">Grand-Saconnex: European Broadcasting Union (Tech 3000)</a>.</li>
+                <li>o. V. (2019): »<a href="https://archive.org/details/octatrack-manual_ENG_OS1.31_191029" target="_blank">Octatrack DPS-1 Dynamic Performance Sampler – Users Manual (OS 1.31)</a>«.</li>
+                <li>o. V. (2020): »<a href="https://teenage.engineering/guides/op-z" target="_blank">OP-Z User Guide</a>«.</li>
                 <li>Orlow, Uriel (2015): »Recherchieren«. In: Künstlerische Forschung: Ein Handbuch. Hg. v. Jens Badura et al. Zürich, Berlin: Diaphanes, 201–204.</li>
                 <li>Plattig, Karl-Heinz (1993): »Aufbau von Außen-, Mittel- und Innenohr«. In: Musikpsychologie: Ein Handbuch. Hg. v. Herbert Bruhn, Rolf Oerter u. Helmut Rösing. Hamburg: Rowohlt, 613–621.</li>
                 <li>Poschardt, Ulf (1997): DJ Culture – Diskjockeys und Popkultur. Hamburg: Rowohlt.</li>
                 <li>Pötzlberger, Florian (2018): Kreatives Remixing. Hg. v. Prof. Dr. Christian Berger u. Prof. Dr. Horst-Peter Götting. Baden-Baden: Nomos (Schriften zum geistigen Eigentum und zum Wettbewerbsrecht).</li>
-                <li>Puckette, Miller (2006): »The Theory and Technique of Electronic Music – Version 0.11 (30.12.2006)«. http://msp.ucsd.edu/techniques/latest/book.pdf.</li>
+                <li>Puckette, Miller (2006): »<a href="http://msp.ucsd.edu/techniques/latest/book.pdf" target="_blank">The Theory and Technique of Electronic Music – Version 0.11 (30.12.2006)</a>«.</li>
                 <li>Rappe, Michael (2010a): »Die Funktion des Sampling in der Musik Missy Elliots. Eine Analyse der Komposition ›Work It‹«. In: Samples: Online-Publikationen des Arbeitskreis Studium Populäre Musik e. V. (ASPM). Hg. v. Ralf von Appen, André Doehring, Dietrich Helms u. Thomas Phleps. Arbeitskreis Studium Populärer Musik e. V. 9.</li>
                 <li>Rappe, Michael (2010b): Under Construction – Kontextbezogene Analyse afroamerikanischer Popmusik. Hg. v. Arnold Jacobshagen u. Christine Stöger. Köln: Verlag Dohr (musicolonia).</li>
                 <li>Rappe, Michael (2018): »Artikel: Joseph Saddler«. In: MGG online. Hg. v. Laurenz Lütteken.</li>
@@ -618,8 +643,8 @@
                 <li>Sewell, Amanda (2013): »A Typology of Sampling in Hip-Hop«. Dissertation. Bloomington: Jacobs School of Music Indiana University.</li>
                 <li>Shannon, Claude E. (1948): »A Mathematical Theory of Communication«. In: Bell System Technical Journal. 27 (3), 379–423.</li>
                 <li>Shannon, Claude E. (1998): »Communication in the Presence of Noise«. In: Proceedings of the IEEE. 86 (2), 447–457.</li>
-                <li>Sherburne, Philip (2013): »Swedish DJs Daleri Mock EDM Cliche With Hilarious Viral Mini-Mix ›Epic Mashleg‹«. https://www.spin.com/2013/07/daleri-epic-mashleg-interview/.</li>
-                <li>Sievers, Florian (2017): »Die hohe Kunst des Copy and Paste«. https://www.fluter.de/ geschichte-des-samplings.</li>
+                <li>Sherburne, Philip (2013): »<a href="https://www.spin.com/2013/07/daleri-epic-mashleg-interview/" target="_blank">Swedish DJs Daleri Mock EDM Cliche With Hilarious Viral Mini-Mix ›Epic Mashleg‹</a>«.</li>
+                <li>Sievers, Florian (2017): »<a href="https://www.fluter.de/geschichte-des-samplings" target="_blank">Die hohe Kunst des Copy and Paste</a>«.</li>
                 <li>Simon, William (1966): Sample and Hold Circuit. United States Patent 3286101.</li>
                 <li>Smudits, Alfred (2007): »Wandlungsprozesse der Musikkultur«. In: Handbuch der systematischen Musikwissenschaft: Musiksoziologie. Bremen: Laaber, 111–145.</li>
                 <li>Stanković, Radomir S. / Astola, Jaakko T. / Karpovsky, Mark G. (2006): »Some Historical Remarks on Sampling Theorem«. In: Proceedings of the 2006 International TICSP Workshop on Spectral Methods and Multirate Signal Processing, 163–170.</li>
@@ -630,7 +655,7 @@
                 <li>van Balen, Jan (2011): »Automatic Recognition of Samples in Musical Audio«. Barcelona: Universitat Pompeu Fabra.</li>
                 <li>van Balen, Jan / Serrà, Joan / Haro, Martin (2013): »Sample Identification in Hip Hop Music«. In: Proceedings of the 9th International Symposium on Computer Music Multidisciplinary Research (CMMR). Hg. v. Mitsuko Aramaki, Mathieu Barthet, Richard Kronland-Martinet u. Sølvi Ystad. Springer Berlin Heidelberg, 301–312.</li>
                 <li>van den Oord, Aäron et al. (2016): »WaveNet: A Generative Model for Raw Audio«. In: Computing Research Repository (CoRR).</li>
-                <li>Wescott, Tim (2010): »Sampling – What Nyquist Didn’t Say, and What to Do About It«. http://www.wescottdesign.com/.</li>
+                <li>Wescott, Tim (2010): »Sampling – What Nyquist Didn’t Say, and What to Do About It«. <a href="http://www.wescottdesign.com/" target="_blank">www.wescottdesign.com</a>.</li>
                 <li>Woodbridge, Richard G. (1969): »Acoustic Recordings from Antiquity«. In: Proceedings of the IEEE. 57 (8), 1465–1466.</li>
                 <li>Wöhrer, Renate (2014): »Mehrfache Referenzen. Interpiktorale Bezüge in der Dokumentarfotografie«. In: Zitieren, appropriieren, sampeln. Hg. v. Frédéric Döhl u. Renate Wöhrer. Bielefeld: transcript, 257–280.</li>
                 <li>Wulf, Silke (2012): »Hören als ZeitSinn«. In: Vom Sinn des Hörens: Beiträge zur Philosophie der Musik. Hg. v. Georg Mohr u. Johann Kreuzer. Würzburg: Königshausen & Neumann, 21–37.</li>
