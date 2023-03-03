@@ -9,15 +9,28 @@
 	
 [...]	[&hellip;] 
 
+&raquo;		»
 &laquo;		«
-&raquo;		» 
-
-&lsaquo; 	‹
+ 
 &rsaquo;	›
+&lsaquo; 	‹
 
 
+Hyphen –
+
+
+<!-- BILD  -->
 
 <figure>
 	<label for="mn-XXX" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-XXX" class="margin-toggle"/><span class="marginnote">CONTENT</span>
-	<img src="img/exports-imports.png" alt="CONTENT" />
+	<img src="./assets/img/XXX.webp" alt="CONTENT" />
 </figure>
+
+
+
+
+<!-- jpg to webp conversion -->
+
+
+convert -colorspace RGB 05.jpg 05_RGB.jpg
+cwebp -q 75 05_RGB.jpg -o 05_RGB.webp
