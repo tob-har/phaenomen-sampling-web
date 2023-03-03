@@ -3,7 +3,7 @@
 
 var toc = document.getElementById("whole-document");
 var headings = toc.querySelectorAll("h2, h3, h4, h5, h6");
-var ul = document.createElement("ul");
+var ul = document.createElement("ol");
 
 for (var i = 0; i < headings.length; i++) {
 	var text = headings[i].textContent;
