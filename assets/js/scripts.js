@@ -33,7 +33,7 @@ function toggleHeight() {
 
 // CLOSE THE TOC AFTER CLICKING A LINK AND MAKE IT SMALL AGAIN
 
-const tocLinks = document.querySelectorAll('#the-table-of-content ol li a');
+const tocLinks = document.querySelectorAll('#the-table-of-content ul li a');
 tocLinks.forEach(link => {
     link.addEventListener('click', () => {
         const detailsElement = document.getElementById('the-table-of-content');
