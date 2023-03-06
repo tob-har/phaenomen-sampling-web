@@ -54,8 +54,7 @@ body {
     background-color: #f2f2f2; /*#fffff8;*/
     color: #111;
     max-width: 1400px;
-    counter-reset: sidenote-counter;
-    counter-reset: h2-counter;
+    counter-reset: h2-counter sidenote-counter;
 
 }
 
@@ -96,12 +95,12 @@ h3 {
     counter-increment: h3-counter;
 }
 
-
-h2:before {
+/* ADD Counter Values before Headings */
+h2::before {
   content: counter(h2-counter) ". ";
 }
 
-h3:before {
+h3::before {
   content: counter(h2-counter) "." counter(h3-counter) ". ";
 }
 
@@ -159,7 +158,8 @@ p {
     text-align: justify;
     text-align-last: none;
     text-justify: auto;
-    text-size-adjust: none;    
+    text-size-adjust: none;
+      
 
     /* ZEILENUMBRÜCHE - siehe: https://www.stichpunkt.de/html/umbruch.html */
     -moz-hyphens: auto;
@@ -434,11 +434,19 @@ label.margin-toggle:not(.sidenote-number) {
     height: 100%;
 }
 
+
+
 @media (max-width: 760px) {
     body {
         width: 84%;
         padding-left: 8%;
         padding-right: 8%;
+    }
+
+    p {
+        text-align: start;
+        text-align-last: none;
+        text-justify: none;
     }
 
     hr,
@@ -511,6 +519,11 @@ label.margin-toggle:not(.sidenote-number) {
     img {
         width: 100%;
     }
+
+    .toc-styling {
+        width: 82%;
+    }
+
 }
 
 
@@ -521,12 +534,17 @@ label.margin-toggle:not(.sidenote-number) {
 
 .toc-heading {
     font-style: italic;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.7rem;
     margin-top: 2rem;
     margin-bottom: 1.4rem;
     line-height: 1;
 }
+
+.toc-styling {
+    max-width: 600px;
+}
+
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
@@ -540,7 +558,6 @@ label.margin-toggle:not(.sidenote-number) {
     z-index: 99999999;
     width: 100%;
     background-color: #f2f2f2;
-    /*color: #111;*/
     opacity: 0.95;
 }
 
@@ -548,7 +565,6 @@ label.margin-toggle:not(.sidenote-number) {
 @media (prefers-color-scheme: dark) {
     .sticky {
         background-color: #151515;
-        color: #ddd;
     }
 }
 
@@ -573,6 +589,7 @@ details summary {
     right: 20px;
     font-size: 1.4rem;
     line-height: 2rem;
+    font-weight: 400;
     /*color: white;*/
     /*background-color: #333;*/
     padding: 10px 15px;

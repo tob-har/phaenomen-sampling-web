@@ -1,9 +1,11 @@
 
 // TABLE OF CONTENTS
 
-var toc = document.getElementById("whole-document");
-var headings = toc.querySelectorAll("h2, h3, h4, h5, h6");
+
+
+const headings = document.querySelectorAll('h2, h3');
 var ul = document.createElement("ul");
+ul.classList.add("toc-styling");
 
 for (var i = 0; i < headings.length; i++) {
 	var text = headings[i].textContent;
@@ -16,6 +18,7 @@ for (var i = 0; i < headings.length; i++) {
 	}
 
 document.getElementById("toc-placeholder").appendChild(ul);
+
 
 
 
@@ -65,19 +68,16 @@ function myFunction() {
 }
 
 
+
 // SCROLL OFFSET TO ALL SCROLLINGS TO AN A ELEMENT
 
 // Get all anchor tags with a hash (#) in the href attribute
 const anchors = document.querySelectorAll('a[href^="#"]');
 
-// Loop through each anchor tag
 anchors.forEach(anchor => {
   anchor.addEventListener('click', function(e) {
-    // Prevent the default behavior of the anchor tag
     e.preventDefault();
-    // Get the target element of the anchor tag
     const target = document.querySelector(this.getAttribute('href'));
-    // Get the top position of the target element
     const targetTop = target.getBoundingClientRect().top + window.pageYOffset;
     // Scroll to the target element with an offset of 80 pixels
     window.scrollTo({
