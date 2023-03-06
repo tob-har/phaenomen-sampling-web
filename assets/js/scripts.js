@@ -18,6 +18,7 @@ for (var i = 0; i < headings.length; i++) {
 document.getElementById("toc-placeholder").appendChild(ul);
 
 
+
 // MAKE TOC LARGE AFTER CLICKING HEADING
 
 function toggleHeight() {
