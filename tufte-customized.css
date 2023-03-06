@@ -159,6 +159,7 @@ p {
     text-align-last: none;
     text-justify: auto;
     text-size-adjust: none;
+    word-spacing:-0.05em;
       
 
     /* ZEILENUMBRÜCHE - siehe: https://www.stichpunkt.de/html/umbruch.html */
@@ -314,6 +315,10 @@ img {
     line-height: 1.3;
     vertical-align: baseline;
     position: relative;
+    text-align: start;
+    text-align-last: none;
+    text-justify: none;
+    hyphens: none; 
 }
 
 .sidenote-number {
