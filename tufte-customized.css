@@ -54,9 +54,9 @@ body {
     background-color: #f2f2f2; /*#fffff8;*/
     color: #111;
     max-width: 1400px;
-    counter-reset: h2-counter sidenote-counter;
-
+    counter-reset: sidenote-counter /*h2-counter*/;
 }
+
 
 /* Adds dark mode */
 @media (prefers-color-scheme: dark) {
@@ -81,8 +81,10 @@ h2 {
     margin-bottom: 1.4rem;
     font-size: 2.2rem;
     line-height: 1;
+    /*
     counter-reset: h3-counter;
     counter-increment: h2-counter;
+    */
 }
 
 h3 {
@@ -92,18 +94,24 @@ h3 {
     margin-top: 2rem;
     margin-bottom: 1.4rem;
     line-height: 1;
+    /*
     counter-increment: h3-counter;
+    */
 }
 
-/* ADD Counter Values before Headings */
+
+/* Add Headings Numbers before Headings (alternative version to the 
+JavaScript Function...) 
+
+>>> IF USED; uncomment  counter-reset h2-counter in body {} <<<
+
 h2::before {
   content: counter(h2-counter) ". ";
 }
-
 h3::before {
   content: counter(h2-counter) "." counter(h3-counter) ". ";
 }
-
+*/
 
 hr {
     display: block;
@@ -548,6 +556,12 @@ label.margin-toggle:not(.sidenote-number) {
 
 .toc-styling {
     max-width: 600px;
+    list-style-type: none;
+}
+
+/* Indentation of H3 elements in TOC */
+.toc-indent{
+    margin-left: 1.5em;
 }
 
 

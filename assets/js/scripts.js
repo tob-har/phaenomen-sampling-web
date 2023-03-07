@@ -1,23 +1,70 @@
+// GENERATE HEADINGS NUMBERING
 
-// TABLE OF CONTENTS
+const article = document.querySelector('#whole-content');
+let currentLevel = 2;
+let h2Counter = 0;
+let h3Counter = 0;
+
+function addNumbersToHeadings(element) {
+  const docHeadings = element.querySelectorAll('h2, h3');
+  for (let i = 0; i < docHeadings.length; i++) {
+    const currentProcessedHeading = docHeadings[i];
+    const level = parseInt(currentProcessedHeading.tagName.substring(1)); // Extract the heading level from the tag name (e.g., "h2" -> 2)
+    // Check if the current heading level is greater than or equal to 2, for Error Logging
+    if (level < 2) {
+      console.error(`Error: Invalid heading level: ${level}. Only levels 2 and 3 are supported.`);
+      continue;
+    }
+
+    //Increment and reset the counters
+    if (level === 2) {
+      h2Counter++;
+      h3Counter = 0;
+    } else if (level === 3) {
+      h3Counter++;
+    }
+
+    // Generate new headings text with the Format: Numbers from counters + text
+    const putHeadingNumber = (level === 2) ? `${h2Counter}.` : `${h2Counter}.${h3Counter}.`;
+    const getHeadingText = currentProcessedHeading.textContent.trim();
+    const newHeadingText = `${putHeadingNumber} ${getHeadingText}`;
+
+    // Replace the heading's text content with the new numbered text
+    currentProcessedHeading.textContent = newHeadingText;
+
+    // Recursively call this function on the current heading's children
+    addNumbersToHeadings(currentProcessedHeading);
+  }
+}
+
+// Call the recursive function on the article element to add numbers to all headings
+addNumbersToHeadings(article);
 
 
 
-const headings = document.querySelectorAll('h2, h3');
-var ul = document.createElement("ul");
-ul.classList.add("toc-styling");
 
-for (var i = 0; i < headings.length; i++) {
-	var text = headings[i].textContent;
-	var li = document.createElement("li");
-	var a = document.createElement("a");
-	a.textContent = text;
-	a.href = "#" + headings[i].id;
-	li.appendChild(a);
-	ul.appendChild(li);
-	}
+// GENERATE TABLE OF CONTENTS
 
-document.getElementById("toc-placeholder").appendChild(ul);
+
+const tocHeadings = document.querySelectorAll('h2, h3');
+var tocUl = document.createElement("ul");
+tocUl.classList.add("toc-styling");
+
+for (var i = 0; i < tocHeadings.length; i++) {
+    var tocItemtext = tocHeadings[i].textContent;
+    var li = document.createElement("li");
+    var a = document.createElement("a");
+    a.textContent = tocItemtext;
+    a.href = "#" + tocHeadings[i].id;
+    li.appendChild(a);
+    // add class "toc-indent" to li element for h3 headings indentation
+    if (tocHeadings[i].tagName.toLowerCase() === 'h3') {
+        li.classList.add('toc-indent');
+    }
+    tocUl.appendChild(li);
+}
+
+document.getElementById("toc-placeholder").appendChild(tocUl);
 
 
 
@@ -103,9 +150,9 @@ function scrollFunction() {
 		}
 }
 
+
 document.querySelector('.back-to-top').addEventListener('click', function(e) {
 	e.preventDefault();
 	document.body.scrollTop = 0;
 	document.documentElement.scrollTop = 0;
 	});
-
